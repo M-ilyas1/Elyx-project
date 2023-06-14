@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 // import Card from "./Card";
+import ReviewCard from "../ReviewCard/ReviewCrad";
 
  function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,8 +38,8 @@ import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
           style={{
             transform: `translateX(-${currentSlide * 24.5}%)`,
           }}>
-         {/* <>Cards</> */}
-        </div>
+          <ReviewCard />
+                 </div>
         <div className="flex justify-center ">
           {[0, 1, 2, 3].map((index) => (
             <div
