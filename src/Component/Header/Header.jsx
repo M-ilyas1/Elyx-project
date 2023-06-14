@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import logo from "../../image/Logo.png";
+import logo from "../../images/Logo.png";
 // import Button from "../Button/Button";
 import { Links } from "./Links";
 
@@ -20,7 +20,7 @@ export default function NavBar() {
           <div className="flex flex-wrap items-center justify-between py-3 md:py-5 md:full">
             <a href="javascript:void(0)">
               <img
-                // src={logo}
+                src={logo}
                 alt="...."
                 className="w-[177.5px] j-[60px]"
               />
