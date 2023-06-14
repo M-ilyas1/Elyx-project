@@ -62,6 +62,7 @@ function ReviewCard() {
           <div
             key={reviewData.id}
             className="h-[350px] w-[336px] bg-white text-center pl-10 pr-10 pt-[55px] rounded-lg "
+            className="h-[350px] w-[336px] bg-white text-center pl-10 pr-10 pt-[55px] rounded-lg  "
           >
             <img
               src={reviewData.avatar}
