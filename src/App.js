@@ -2,7 +2,7 @@ import './App.css';
 import Header from '../src/Component/Header/Header'
 import AuctionCard from './Component/AuctionCard/AuctionCard';
 import car from "./images/car.png";
-
+import ReviewCard from './Component/ReviewCard/ReviewCrad';
 
 function App() {
   const data = [
@@ -106,6 +106,11 @@ function App() {
           </div>
         </section>
 
+      <section className="bg-[#F8F8FF] p-[50px] w-full">
+          <div className="flex justify-center gap-7">
+            <ReviewCard />
+          </div>
+        </section>
     </div>
   );
 }
