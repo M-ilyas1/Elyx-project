@@ -1,5 +1,14 @@
 import "./App.css";
 import Header from "../src/Component/Header/Header";
+<<<<<<< HEAD
+// import AuctionCard from './Component/AuctionCard/AuctionCard';
+// import car from "./images/car.png";
+import ReviewCard from "./Component/ReviewCard/ReviewCrad";
+import Carousel from "./Component/Carousel/Carousel";
+import Example from "./Component/footer/footer";
+
+function App() {
+=======
 import Carousel from "./Component/Carousel/Carousel";
 import car from "./images/car.png";
 import AuctionCard from "./Component/AuctionCard/AuctionCard";
@@ -79,11 +88,19 @@ function App() {
       image: car,
     }, 
   ];
+>>>>>>> dcdeb7d544a9d9802671148d35c1cf35440618e4
   return (
     <div className="App">
       <header>
         <Header />
       </header>
+<<<<<<< HEAD
+      <section className="bg-[#F8F8FF] p-[50px] w-full">
+        {/* <ReviewCard /> */}
+
+        <div className=" bg-white  justify-center text-center align-middle w-full ">
+          <Carousel />
+=======
 
       <section className="w-full flex justify-center" >
         <div className="w-[1440px]">
@@ -105,10 +122,20 @@ function App() {
               })
             }
           </div>
+>>>>>>> dcdeb7d544a9d9802671148d35c1cf35440618e4
         </div>
       </section>
 
       <section className="bg-[#F8F8FF] p-[50px] w-full">
+<<<<<<< HEAD
+        <div className="flex flex-wrap justify-center gap-7 "></div>
+      </section>
+      <section>
+        <div>
+         <footer/>
+        </div>
+      </section>
+=======
         <div className=" bg-white  justify-center text-center align-middle w-full ">
           <Carousel />
         </div>
@@ -116,6 +143,7 @@ function App() {
     
 
 
+>>>>>>> dcdeb7d544a9d9802671148d35c1cf35440618e4
     </div>
   );
 }
