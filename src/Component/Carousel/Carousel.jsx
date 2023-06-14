@@ -38,7 +38,7 @@ import ReviewCard from "../ReviewCard/ReviewCrad";
           style={{
             transform: `translateX(-${currentSlide * 24.5}%)`,
           }}>
-          <ReviewCard />
+          
                  </div>
         <div className="flex justify-center ">
           {[0, 1, 2, 3].map((index) => (
