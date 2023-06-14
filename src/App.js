@@ -114,11 +114,7 @@ function App() {
           <Carousel />
         </div>
       </section>
-      <section className="bg-[#F8F8FF] p-[50px] w-full">
-        <div className="flex flex-wrap justify-center gap-5 ">
-          <ReviewCard />
-        </div>
-      </section>
+   
     
 
 
