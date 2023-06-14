@@ -9,9 +9,10 @@ function App() {
         <Header />
       </header>
       <section className="bg-[#F8F8FF] p-[50px] w-full">
-          <div className="flex justify-center gap-7">
-            <ReviewCard />
-          </div>
+      <div className="flex flex-wrap justify-center gap-7 ">
+  <ReviewCard />
+</div>
+
         </section>
     </div>
   );
