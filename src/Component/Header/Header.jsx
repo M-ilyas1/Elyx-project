@@ -14,8 +14,8 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="w-full shadow flex justify-center items-center">
-      <div className=" w-[1440px]  flex justify-between items-center flex-wrap px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+    <nav className="w-full shadow">
+      <div className="justify-between items-center flex-wrap px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex flex-wrap items-center justify-between py-3 md:py-5 md:full">
             <a href="javascript">
