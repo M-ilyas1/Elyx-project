@@ -1,5 +1,4 @@
-import "./App.css";
-import Header from "../src/Component/Header/Header";
+function App() {
 import Carousel from "./Component/Carousel/Carousel";
 import Example from "./Component/footer/footer";
 import car from "./images/car.png";
@@ -87,6 +86,10 @@ function App() {
       <header>
         <Header />
       </header>
+
+      <div className=" bg-white  justify-center text-center align-middle w-full ">
+        <Carousel />
+      </div>
 
       <section className="w-full flex justify-center">
         <div className="w-[1440px]">
