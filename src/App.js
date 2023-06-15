@@ -4,7 +4,6 @@ import Carousel from "./Component/Carousel/Carousel";
 import Example from "./Component/footer/footer";
 import car from "./images/car.png";
 import AuctionCard from "./Component/AuctionCard/AuctionCard";
-import ReviewCard from "./Component/ReviewCard/ReviewCrad";
 
 function App() {
   const data = [
@@ -87,7 +86,7 @@ function App() {
         <Header />
       </header>
 
-      <section className="">
+      <section className="w-[1920] flex justify-center">
         <div className="w-[1440px]">
           <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
             Lattest Auctions
