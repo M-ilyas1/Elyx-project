@@ -4,7 +4,6 @@ import Carousel from "./Component/Carousel/Carousel";
 import Example from "./Component/footer/footer";
 import car from "./images/car.png";
 import AuctionCard from "./Component/AuctionCard/AuctionCard";
-import ReviewCard from "./Component/ReviewCard/ReviewCrad";
 
 function App() {
   const data = [
@@ -86,11 +85,7 @@ function App() {
       <header>
         <Header />
       </header>
-      <section className="bg-[#F8F8FF] p-[50px] w-full">
-        <div className=" bg-white  justify-center text-center align-middle w-full ">
-          <Carousel />
-        </div>
-      </section>
+
 
       <section className="w-full flex justify-center">
         <div className="w-[1440px]">
@@ -112,6 +107,12 @@ function App() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#F8F8FF] p-[50px] w-full">
+        <div className=" bg-white  justify-center text-center align-middle w-full ">
+          <Carousel />
         </div>
       </section>
 
