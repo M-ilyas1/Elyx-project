@@ -4,7 +4,8 @@ import Carousel from "./Component/Carousel/Carousel";
 import Example from "./Component/footer/footer";
 import car from "./images/car.png";
 import AuctionCard from "./Component/AuctionCard/AuctionCard";
-import HeroSection from './Component/HeroSection/HeroSection'
+import HeroSection from './Component/HeroSection/HeroSection';
+import Product from './Component/Product/Product';
 
 function App() {
   const data = [
@@ -132,7 +133,7 @@ function App() {
           <Example />
         </div>
       </section>
-      
+
     </section>
   );
 }
