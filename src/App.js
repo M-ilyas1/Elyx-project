@@ -3,7 +3,9 @@ import Header from "../src/Component/Header/Header";
 import Carousel from "./Component/Carousel/Carousel";
 import car from "./images/car.png";
 import AuctionCard from "./Component/AuctionCard/AuctionCard";
-import ReviewCard from "./Component/ReviewCard/ReviewCrad";
+import Product from "./Component/Product/Product";
+
+
 
 function App() {
   const data = [
@@ -115,10 +117,12 @@ function App() {
         </div>
       </section>
    
-    
+      <Product/>
 
 
     </div>
+
+   
   );
 }
 
