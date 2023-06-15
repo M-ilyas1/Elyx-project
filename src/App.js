@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "../src/Component/Header/Header";
 import Carousel from "./Component/Carousel/Carousel";
+import Example from "./Component/footer/footer";
 import car from "./images/car.png";
 import AuctionCard from "./Component/AuctionCard/AuctionCard";
 import Product from "./Component/Product/Product";
@@ -26,7 +27,7 @@ function App() {
       engine: "2WD",
       location: "California,USA",
       image: car,
-    }, 
+    },
     {
       id: 3,
       price: "$300000",
@@ -53,7 +54,7 @@ function App() {
       engine: "5WD",
       location: "California,USA",
       image: car,
-    }, 
+    },
     {
       id: 6,
       price: "$6000000",
@@ -62,7 +63,7 @@ function App() {
       engine: "6WD",
       location: "California,USA",
       image: car,
-    },   
+    },
     {
       id: 7,
       price: "$7000000",
@@ -71,7 +72,7 @@ function App() {
       engine: "7WD",
       location: "California,USA",
       image: car,
-    }, 
+    },
     {
       id: 8,
       price: "$800000",
@@ -80,46 +81,54 @@ function App() {
       engine: "8WD",
       location: "California,USA",
       image: car,
-    }, 
+    },
   ];
   return (
-    <div className="App">
+    <div className="font-[]">
       <header>
         <Header />
       </header>
+      <section className="bg-[#F8F8FF] p-[50px] w-full">
+        <div className=" bg-white  justify-center text-center align-middle w-full ">
+          <Carousel />
+        </div>
+      </section>
 
-      <section className="w-full flex justify-center" >
+      <section className="w-full flex justify-center">
         <div className="w-[1440px]">
-        <h1 className="pb-5 font-semibold text-4xl font-[poppins]" >Lattest Auctions</h1>
-          <hr className=" pb-7"/>
+          <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
+            Lattest Auctions
+          </h1>
+          <hr className=" pb-7" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
-            {
-              data.map((item) =>{
-                return(
-                  <AuctionCard
+            {data.map((item) => {
+              return (
+                <AuctionCard
                   price={item.price}
                   name={item.name}
                   model={item.model}
                   engine={item.engine}
                   location={item.location}
                   image={item.image}
-                  />
-                )
-              })
-            }
+                />
+              );
+            })}
           </div>
         </div>
       </section>
 
       <section className="bg-[#F8F8FF] p-[50px] w-full">
-        <div className=" bg-white  justify-center text-center align-middle w-full ">
-          <Carousel />
+        <div className="flex flex-wrap justify-center gap-7 "></div>
+      </section>
+      <section>
+        <div>
+          <Example />
         </div>
       </section>
    
+<section>
       <Product/>
-
-
+  <section/>
     </div>
 
    
