@@ -16,7 +16,7 @@ import ReviewCard from "../ReviewCard/ReviewCrad";
  
 
   return (
-    <div className="bg-gray-100">
+    <div className="zbg-gray-100">
       <div className="flex justify-between">
         <div>
           <h1 className="font-bold mt-5 ml-14 text-2xl">What our clients say</h1>

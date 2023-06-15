@@ -86,13 +86,13 @@ function App() {
         <Header />
       </header>
 
-      <section className="w-full flex justify-center">
+      <section className="">
         <div className="w-[1440px]">
           <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
             Lattest Auctions
           </h1>
           <hr className=" pb-7" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
+          <div className="grid justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
             {data.map((item) => {
               return (
                 <AuctionCard
