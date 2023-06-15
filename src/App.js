@@ -1,4 +1,4 @@
-function App() {
+import Header from "../src/Component/Header/Header";
 import Carousel from "./Component/Carousel/Carousel";
 import Example from "./Component/footer/footer";
 import car from "./images/car.png";
@@ -82,15 +82,11 @@ function App() {
   ];
   return (
     <section className="flex justify-center items-center">
-      <div className="">
+      <div className="w-[1440px]">
       <header>
         <Header />
       </header>
-    
-      <div className=" bg-white  justify-center text-center align-middle w-full ">
-        <Carousel />
-      </div>
-    
+
       <section className="w-full flex justify-center">
         <div className="w-[1440px]">
           <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
@@ -114,12 +110,6 @@ function App() {
         </div>
       </section>
 
-  <section className="bg-[#F8F8FF] p-[50px] w-full">
-  <div className=" bg-white  justify-center text-center align-middle w-full ">
-    <Carousel />
-  </div>
-</section>
-
       <section className="bg-[#F8F8FF] p-[50px] w-full">
         <div className=" bg-white  justify-center text-center align-middle w-full ">
           <Carousel />
@@ -133,7 +123,6 @@ function App() {
       <section className="bg-[#F8F8FF] p-[50px] w-full">
         <div className="flex flex-wrap justify-center gap-7 "></div>
       </section>
-
       <section>
         <div>
           <Example />
