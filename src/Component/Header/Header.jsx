@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "../../images/Logo.png";
 // import Button from "../Button/Button";
 import { Links } from "./Links";
+import Button from "../Button/Button";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -19,11 +20,7 @@ export default function NavBar() {
         <div>
           <div className="flex flex-wrap items-center justify-between py-3 md:py-5 md:full">
             <a href="javascript">
-              <img
-                src={logo}
-                alt="...."
-                className="w-[177.5px] j-[60px]"
-              />
+              <img src={logo} alt="...." className="w-[177.5px] j-[60px]" />
             </a>
             <div className="md:hidden">
               <button
@@ -73,11 +70,12 @@ export default function NavBar() {
               {link.map((item) => (
                 <Links title={item} className={"block"} key={item} />
               ))}
-              {/* <Button
-                label="Login / Signup"
-                height={"h-[60px]"}
-                width={"w-[196px]"}
-              /> */}
+            <Button
+              label="Login / Signup"
+              height={"h-[60px]"}
+              width={"w-[196px]"}
+              variants="primary"
+            />
             </ul>
           </div>
         </div>
