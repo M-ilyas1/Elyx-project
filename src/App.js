@@ -87,7 +87,6 @@ function App() {
       <header>
         <Header />
       </header>
-
       <section className="w-full flex justify-center">
         <div className="w-[1440px]">
           <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
