@@ -86,7 +86,7 @@ function App() {
         <Header />
       </header>
 
-      <section className="w-[1920] flex justify-center">
+      <section className="flex justify-center">
         <div className="w-[1440px]">
           <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
             Lattest Auctions

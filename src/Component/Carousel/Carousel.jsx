@@ -40,7 +40,6 @@ import ReviewCard from "../ReviewCard/ReviewCrad";
             transform: `translateX(-${currentSlide * 24.5}%)`,
           }}>
 
-
         <div className="flex flex-wrap justify-center gap-5 ">
           <ReviewCard />
         </div>
