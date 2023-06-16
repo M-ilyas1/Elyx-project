@@ -91,7 +91,6 @@ function App() {
         <section>
           <HeroSection />
         </section>
-
         <section className="w-full flex justify-center">
           <div className="w-[1440px]">
             <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
@@ -114,13 +113,11 @@ function App() {
             </div>
           </div>
         </section>
-
         <section className="bg-[#F8F8FF] p-[50px] w-full">
           <div className=" bg-white  justify-center text-center align-middle w-full ">
             <Carousel />
           </div>
         </section>
-
         <section>
           <Product />
         </section>
@@ -139,5 +136,4 @@ function App() {
     </section>
   );
 }
-
 export default App;
