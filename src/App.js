@@ -5,6 +5,8 @@ import car from "./images/car.png";
 import AuctionCard from "./Component/AuctionCard/AuctionCard";
 import Product from "./Component/Product/Product";
 import HeroSection from "./Component/HeroSection/HeroSection";
+import PopularItems from "./Component/PopularItems/PopularItems";
+
 function App() {
   const data = [
     {
@@ -119,7 +121,10 @@ function App() {
         <section>
           <Product />
         </section>
-        <section className="bg-[#F8F8FF] p-[50px] w-full">
+        <section>
+          <PopularItems />
+        </section>
+        <section className="bg-[#F8F8FF] w-full">
           <div className="flex flex-wrap justify-center gap-7 "></div>
         </section>
         <section>
