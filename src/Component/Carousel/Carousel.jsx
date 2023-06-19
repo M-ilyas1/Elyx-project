@@ -16,7 +16,7 @@ import ReviewCard from "../ReviewCard/ReviewCrad";
  
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-[#F8F8FF] ">
       <div className="flex justify-between">
         <div>
           <h1 className="font-bold mt-5 ml-14 text-2xl">What our clients say</h1>
@@ -39,8 +39,15 @@ import ReviewCard from "../ReviewCard/ReviewCrad";
             transform: `translateX(-${currentSlide * 24.5}%)`,
           }}>
           
+
+
+        <div className="flex flex-wrap justify-center gap-5 ">
+          <ReviewCard />
+        </div>
+     
+
                  </div>
-        <div className="flex justify-center ">
+        <div className="flex justify-center  mt-5">
           {[0, 1, 2, 3].map((index) => (
             <div
               key={index}

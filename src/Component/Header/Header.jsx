@@ -18,7 +18,7 @@ export default function NavBar() {
       <div className="justify-between items-center flex-wrap px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex flex-wrap items-center justify-between py-3 md:py-5 md:full">
-            <a href="javascript:void(0)">
+            <a href="javascript">
               <img
                 src={logo}
                 alt="...."
