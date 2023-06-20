@@ -16,6 +16,7 @@ import ReviewCard from "../ReviewCard/ReviewCrad";
  
 
   return (
+    <div className="zbg-gray-100">
     <div className="bg-[#F8F8FF] ">
       <div className="flex justify-between">
         <div>
@@ -57,7 +58,7 @@ import ReviewCard from "../ReviewCard/ReviewCrad";
           ))}
         </div>
       </div>
-    </div>
+      </div></div>
   );
 }
 export default Carousel;
