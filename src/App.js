@@ -1,10 +1,11 @@
-import "./App.css";
 import Header from "../src/Component/Header/Header";
+import Carousel from "./Component/Carousel/Carousel";
 import Example from "./Component/footer/footer";
 import car from "./images/car.png";
 import AuctionCard from "./Component/AuctionCard/AuctionCard";
-import Carousel from "./Component/Carousel/Carousel";
-
+import Product from "./Component/Product/Product";
+import HeroSection from "./Component/HeroSection/HeroSection";
+import PopularItems from "./Component/PopularItems/PopularItems";
 
 function App() {
   const data = [
@@ -82,50 +83,57 @@ function App() {
     },
   ];
   return (
-    <div className="font-[]">
-      <header>
-        <Header />
-      </header>
-      
-      <section className="flex items-center bg-[#F8F8FF] p-[50px] w-full">
-        <div className=" bg-white  justify-center text-center align-middle w-full ">
-          <Carousel />
-        </div>
-      </section>
-
-      <section className="w-full flex justify-center">
-        <div className="w-[1440px]">
-          <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
-            Lattest Auctions
-          </h1>
-          <hr className=" pb-7" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
-            {data.map((item) => {
-              return (
-                <AuctionCard
-                  price={item.price}
-                  name={item.name}
-                  model={item.model}
-                  engine={item.engine}
-                  location={item.location}
-                  image={item.image}
-                />
-              );
-            })}
+    <section className="flex justify-center items-center">
+      <div className="w-[1440px]">
+        <header>
+          <Header />
+        </header>
+        <section>
+          <HeroSection />
+        </section>
+        <section className="w-full flex justify-center">
+          <div className="w-[1440px]">
+            <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
+              Lattest Auctions
+            </h1>
+            <hr className=" pb-7" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
+              {data.map((item) => {
+                return (
+                  <AuctionCard
+                    price={item.price}
+                    name={item.name}
+                    model={item.model}
+                    engine={item.engine}
+                    location={item.location}
+                    image={item.image}
+                  />
+                );
+              })}
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-[#F8F8FF] p-[50px] w-full">
-        <div className="flex flex-wrap justify-center gap-7 "></div>
-      </section>
-      <section>
-        <div>
-          <Example />
-        </div>
-      </section>
-    </div>
+        </section>
+        <section className="bg-[#F8F8FF] w-full">
+          <div className=" bg-white  justify-center text-center align-middle w-full ">
+            <Carousel/>
+          </div>
+        </section>
+        <section>
+          <Product />
+        </section>
+        <section>
+          <PopularItems />
+        </section>
+        <section className="bg-[#F8F8FF] w-full">
+          <div className="flex flex-wrap justify-center gap-7 "></div>
+        </section>
+        <section>
+          <div>
+            <Example />
+          </div>
+        </section>
+      </div>
+    </section>
   );
 }
-
 export default App;
