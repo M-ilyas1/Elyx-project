@@ -153,8 +153,8 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="bg-[#F8F8FF] w-full">
-          <div className=" bg-white  justify-center text-center align-middle w-full ">
+        <section className="bg-[#F8F8FF] p-[50px] w-full">
+          <div className=" bg-white  justify-center text-center  w-full ">
             <Carousel/>
           </div>
         </section>
@@ -203,4 +203,3 @@ function App() {
   );
 }
 export default App;
-
