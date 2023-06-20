@@ -1,10 +1,12 @@
 import Header from "../src/Component/Header/Header";
+import FilterSection from "./Component/FilterSection/FilterSection";
+import MainSection2 from './Component/MainSection2/MainSection2'
 import Carousel from "./Component/Carousel/Carousel";
 import Example from "./Component/footer/footer";
 import car from "./images/car.png";
 import AuctionCard from "./Component/AuctionCard/AuctionCard";
 import Product from "./Component/Product/Product";
-import HeroSection from "./Component/HeroSection/HeroSection";
+// import HeroSection from "./Component/HeroSection/HeroSection";
 function App() {
   const data = [
     {
@@ -86,10 +88,20 @@ function App() {
         <header>
           <Header />
         </header>
+
         <section>
-          <HeroSection />
+          <FilterSection/>
         </section>
-        <section className="w-full flex justify-center">
+         
+        <section>
+          <MainSection2/>
+        </section>
+        
+        {/* <section>
+          <HeroSection />
+        </section> */}
+
+          <section className="w-full flex justify-center">
           <div className="w-[1440px]">
             <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
               Lattest Auctions
