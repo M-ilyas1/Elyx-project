@@ -81,7 +81,7 @@ function App() {
     },
   ];
   return (
-    <div className="font-[]">
+    <div >
     <section className="flex justify-center items-center">
       <div className="w-[1440px]">
         <header>
@@ -91,7 +91,7 @@ function App() {
           <HeroSection />
         </section>
         <section className="w-full flex justify-center">
-          <div className="w-[1440px]">
+          <div >
             <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
               Lattest Auctions
             </h1>
@@ -112,7 +112,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="bg-[#F8F8FF] p-[50px] w-full">
+        <section className="bg-[#F8F8FF] w-full">
           <div className=" bg-white  justify-center text-center align-middle w-full ">
             <Carousel />
           </div>
