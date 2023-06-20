@@ -1,22 +1,26 @@
 import React, { useState } from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-// import Card from "./Card";
 import ReviewCard from "../ReviewCard/ReviewCrad";
 
-function Carousel() {
+export default function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 4;
 
   const previousSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1 - totalSlides) % totalSlides);
+    setCurrentSlide((prevSlide) => {
+      const numSlides = 4;
+      return (prevSlide + numSlides - 1) % numSlides;
+    });
   };
 
   const nextSlide = () => {
-    setCurrentSlide((nextSlide) => (nextSlide - 1 + totalSlides) %567890- totalSlides);
+    setCurrentSlide((prevSlide) => {
+      const numSlides = 4;
+      return (prevSlide + 1) % numSlides;
+    });
   };
 
   return (
-    <div className="bg-[#F8F8FF]">
+    <div className="bg-gray-100">
       <div className="flex justify-between">
         <div>
           <h1 className="font-bold mt-5 text-2xl">What our clients say</h1>
@@ -39,25 +43,24 @@ function Carousel() {
             transform: `translateX(-${currentSlide * 24.5}%)`,
           }}
         >
-          <div className="flex flex-wrap justify-center gap-5">
-            <ReviewCard />
-          </div>
+          {[0, 1, 2, 3].map((index) => (
+            <div key={index} className="flex">
+              <ReviewCard />
+            </div>
+          ))}
         </div>
-      </div>
-
-      <div className="flex justify-center mt-5">
-        {[...Array(totalSlides)].map((_, index) => (
-          <div
-            key={index}
-            className={`h-2 w-2 rounded-full mx-1 ${
-              index === currentSlide ? "bg-blue-700" : "bg-gray-400 bg-"
-            }`}
-            onClick={() => setCurrentSlide(index)}
-          ></div>
-        ))}
+        <div className="flex justify-center pb-10 ">
+          {[0, 1, 2, 3].map((index) => (
+            <div
+              key={index}
+              className={`h-2 w-2 rounded-full mx-1 ${
+                index === currentSlide ? "bg-blue-700" : "bg-gray-400 bg-"
+              }`}
+              onClick={() => setCurrentSlide(index)}
+            ></div>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
-
-export default Carousel;
