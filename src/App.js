@@ -155,7 +155,7 @@ function App() {
         </section>
         <section className="bg-[#F8F8FF] w-full">
           <div className=" bg-white  justify-center text-center align-middle w-full ">
-            <Carousel />
+            <Carousel/>
           </div>
         </section>
 
