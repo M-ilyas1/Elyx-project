@@ -1,4 +1,6 @@
 import Header from "../src/Component/Header/Header";
+import FilterSection from "./Component/FilterSection/FilterSection";
+import MainSection2 from './Component/MainSection2/MainSection2'
 import Carousel from "./Component/Carousel/Carousel";
 import Example from "./Component/footer/footer";
 import car from "./images/car.png";
@@ -89,9 +91,20 @@ function App() {
         <header>
           <Header />
         </header>
+        
+        <section>
+          <FilterSection/>
+        </section>
+        
         <section>
           <HeroSection />
+        </section>     
+         
+        <section>
+          <MainSection2/>
         </section>
+        
+        
         <section className="w-full flex justify-center">
           <div >
             <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
@@ -128,6 +141,7 @@ function App() {
         <section className="bg-[#F8F8FF] w-full">
           <div className="flex flex-wrap justify-center gap-7 "></div>
         </section>
+
         <section>
           <div>
             <Example />
@@ -139,3 +153,4 @@ function App() {
   );
 }
 export default App;
+
