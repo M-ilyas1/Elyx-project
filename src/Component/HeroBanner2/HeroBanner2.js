@@ -1,7 +1,7 @@
 import React from 'react'
 import MainImg from '../../images/car,bike.png'
 
-export default function MainSection2() {
+export default function HeroBanner2() {
   return (
     <div className='w-[100%]  bg-[#F8F8FF] flex flex-wrap'>
     <div className='w-[50%] h-[320px]'>
