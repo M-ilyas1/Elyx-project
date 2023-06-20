@@ -1,6 +1,6 @@
 import Header from "../src/Component/Header/Header";
 import FilterSection from "./Component/FilterSection/FilterSection";
-import MainSection2 from './Component/MainSection2/MainSection2'
+import HeroBanner2 from './Component/HeroBanner2/HeroBanner2'
 import Carousel from "./Component/Carousel/Carousel";
 import Example from "./Component/footer/footer";
 import car from "./images/car.png";
@@ -127,7 +127,7 @@ function App() {
         </section>     
          
         <section>
-          <MainSection2/>
+          <HeroBanner2/>
         </section>
         
         
