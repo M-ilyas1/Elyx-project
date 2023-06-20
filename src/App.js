@@ -115,7 +115,6 @@ function App() {
     <section className="flex justify-center items-center">
       <div className="w-[1440px]">
         <header>
-        <h1>cfghgkjgjkghjkghjmn</h1>
           <Header />
         </header>
         
