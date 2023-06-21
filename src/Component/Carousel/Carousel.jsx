@@ -7,20 +7,20 @@ export default function Carousel() {
 
   const previousSlide = () => {
     setCurrentSlide((prevSlide) => {
-      const numSlides = 4;
+      const numSlides = 5;
       return (prevSlide + numSlides - 1) % numSlides;
     });
   };
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => {
-      const numSlides = 4;
+      const numSlides = 5;
       return (prevSlide + 1) % numSlides;
     });
   };
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 ">
       <div className="flex justify-between">
         <div>
           <h1 className="font-bold mt-5 text-2xl">What our clients say</h1>
@@ -43,14 +43,14 @@ export default function Carousel() {
             transform: `translateX(-${currentSlide * 24.5}%)`,
           }}
         >
-          {[0, 1, 2, 3].map((index) => (
+          {[0, 1, 2, 3,].map((index) => (
             <div key={index} className="flex">
               <ReviewCard />
             </div>
           ))}
         </div>
-        <div className="flex justify-center pb-10 ">
-          {[0, 1, 2, 3].map((index) => (
+        <div className="flex justify-center pb-10 pt-5 ">
+          {[0, 1, 2, 3,].map((index) => (
             <div
               key={index}
               className={`h-2 w-2 rounded-full mx-1 ${
