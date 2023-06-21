@@ -10,6 +10,7 @@ import Product from "./Component/Product/Product";
 import HeroSection from "./Component/HeroSection/HeroSection";
 import PopularItems from "./Component/PopularItems/PopularItems";
 
+
 function App() {
   const AuctionData8 = [
     {
