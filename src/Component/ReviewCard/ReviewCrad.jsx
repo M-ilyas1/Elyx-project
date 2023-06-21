@@ -61,7 +61,7 @@ function ReviewCard() {
         return (
           <div
             key={reviewData.id}
-            className="h-[350px] w-[336px] bg-white text-center pt-[55px] rounded-lg "
+            className="h-[350px] w-[306px] bg-white gap-5 pt-[55px] rounded-lg "
            
           >
             <img
