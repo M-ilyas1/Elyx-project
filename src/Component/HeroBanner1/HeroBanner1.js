@@ -21,7 +21,7 @@ export default function HeroBanner1() {
       <div className="w-[100%] flex">
         <div className="w-[55%] flex flex-wrap justify-end items-center bg-white">
           <div className="w-[80%] bg-white">
-            <select className="w-[150px] p-2 border-blue-700 border-2">
+            <select className="w-[150px] text-[20px] text-blue-700 font-normal p-2 border-blue-700 border-2">
               <option value="">Cars</option>
               <option value="">Bikes</option>
               <option value="">Watches</option>
