@@ -1,6 +1,7 @@
 import Header from "../src/Component/Header/Header";
 import FilterSection from "./Component/FilterSection/FilterSection";
 import HeroBanner2 from './Component/HeroBanner2/HeroBanner2'
+import HeroBanner1 from './Component/HeroBanner1/HeroBanner1'
 import Carousel from "./Component/Carousel/Carousel";
 import Example from "./Component/footer/footer";
 import car from "./images/car.png";
@@ -114,7 +115,7 @@ function App() {
   return (
     <div >
     <section className="flex justify-center items-center">
-      <div className="w-[1440px]">
+      <div >
         <header>
           <Header />
         </header>
@@ -129,6 +130,10 @@ function App() {
          
         <section>
           <HeroBanner2/>
+        </section>
+
+        <section>
+          <HeroBanner1/>
         </section>
         
         
