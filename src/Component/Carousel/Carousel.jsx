@@ -16,11 +16,11 @@ export default function Carousel() {
   return (
     <div className=" ">
       <div className="flex justify-between">
-        <div className="font-bold mt-2 text-2xl ml-[5.5%]">
+        <div className="font-bold mt-2 text-2xl">
           <h1>What our clients say</h1>
         </div>
 
-        <div className="mr-[5.10%]">
+        <div className="">
           <button onClick={previousSlide}>
             <BsArrowLeftShort className="border-2 border-blue-700 w-[48px] h-[48px] p-1 text-4xl rounded-[100px] hover:bg-blue-700 hover:text-white hover:cursor-pointer m-1" />
           </button>
