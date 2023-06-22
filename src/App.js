@@ -129,7 +129,7 @@ function App() {
           <FilterSection/>
         </section>
         
-     {/* <section>
+      {/*  <section>
           <HeroSection />
         </section>     
          
@@ -187,8 +187,8 @@ function App() {
             </div>
           </div>
         </section> */}
-
-        {/* <section>
+{/* 
+        <section>
           <Cta />
         </section> */}
 
