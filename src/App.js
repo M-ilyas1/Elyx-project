@@ -128,6 +128,12 @@ function App() {
          <section>
           <FilterSection/>
         </section>
+
+        <section>
+          <div>
+          <Cardimg/>
+          </div>
+        </section>
         
        <section>
           <HeroSection />
@@ -221,11 +227,7 @@ function App() {
             <Example />
           </div>
         </section>
-        <section>
-          <div>
-          <Cardimg/>
-          </div>
-        </section>
+        
       </div>
     </section>
     </div>
