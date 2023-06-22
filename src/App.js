@@ -129,7 +129,7 @@ function App() {
          
         <section>
           <HeroBanner2/>
-        </section> 
+        </section>  
                  
         <section className="w-full flex justify-center">
           <div >
@@ -153,8 +153,8 @@ function App() {
             </div>
           </div>
         </section> 
-        <section className="bg-[#F8F8FF] p-[50px] ">
-          <div className="   justify-center text-center ">
+        <section className="bg-[#F8F8FF] p-[30px] w-[1440px] ">
+          <div className=" justify-center text-center ">
             <Carousel/>
           </div>
         </section>
