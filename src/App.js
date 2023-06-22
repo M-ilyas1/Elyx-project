@@ -114,7 +114,7 @@ function App() {
   return (
     <div >
     <section className="flex justify-center items-center">
-      <div className="w-[1440px]">
+      <div>
         <header>
           <Header />
         </header>

@@ -20,7 +20,7 @@ const AuctionCard = ({image,price,model,name,engine,location,...e}) => {
       <div className="main">
         <div className="image relative">
           <img
-            className="w-[424px] h-[240px]"
+            className="w-[100%] h-[100%]"
             src={image}
             alt={name}
           />
@@ -35,10 +35,10 @@ const AuctionCard = ({image,price,model,name,engine,location,...e}) => {
           </div>
         </div>
         <div className="content">
-          <h1 className="font-semibold font-size-18px line-height-26px w-[280px] h-[48px] ml-1 pt-5 capitalize text-lg tracking-wider pl-5 ">
+          <h1 className="font-semibold font-size-18px line-height-26px ml-1 pt-5 capitalize text-lg tracking-wider pl-5 ">
             {model} {name} {engine}
           </h1>
-          <p className="w-[300px] h-[14px] capitalize font-normal font-size-14px line-height-14px text-sm ml-1 mt-10 pl-5 ">
+          <p className="capitalize font-normal font-size-14px line-height-14px text-sm ml-1 mt-10 pl-5 ">
             {location}
           </p>
         </div>
