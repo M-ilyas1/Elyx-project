@@ -159,7 +159,7 @@ function App() {
             </div>
           </div>
         </section>  */}
-        <section className="bg-[#F8F8FF] p-[30px]  ">
+        <section className="bg-green-900 p-[30px] w-[1920px] flex flex-col justify-center items-center  ">
           <div className=" justify-center text-center ">
             <Carousel/>
           </div>

@@ -14,7 +14,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className=" ">
+    <div className="bg-red-900 w-[1440px] ">
       <div className="flex justify-between">
         <div className="font-bold mt-2 text-2xl">
           <h1>What our clients say</h1>
