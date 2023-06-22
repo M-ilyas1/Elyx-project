@@ -14,8 +14,8 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="main bg-green-600">
-      <div className="w-full  bg-red-600 justify-between items-center flex-wrap px-4 mx-auto  Nav:items-center Nav:flex Nav:px-8">
+    <nav className="main">
+      <div className="w-full justify-between items-center flex-wrap px-4 mx-auto  Nav:items-center Nav:flex Nav:px-8">
         <div>
           <div className="flex flex-wrap items-center justify-between py-3 Nav:py-5 Nav:full">
             <a href="javascript:void(0)">
