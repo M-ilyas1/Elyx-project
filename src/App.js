@@ -15,7 +15,6 @@ import {
   PopularItems,
   Button,
 } from "./Component";
-
 function App() {
   const AuctionData8 = [
     {
@@ -124,20 +123,16 @@ function App() {
         <header>
           <Header />
         </header>
-         
          <section>
           <FilterSection/>
         </section>
-        
-      {/*  <section>
+       <section>
           <HeroSection />
-        </section>     
-         
+        </section>
         <section>
           <HeroBanner2/>
-        </section>   */}
-                 
-        {/* <section className="w-full flex justify-center">
+        </section>
+        <section className="w-full flex justify-center">
           <div className="px-[110px]">
             <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
               Lattest Auctions
@@ -158,14 +153,13 @@ function App() {
               })}
             </div>
           </div>
-        </section>  */}
+        </section>
         <section className="bg-[#F8F8FF] p-[30px]  ">
           <div className=" justify-center text-center ">
             <Carousel/>
           </div>
         </section>
-
-        {/* <section className="p-[110px]">
+        <section className="p-[110px]">
           <div>
             <h1 className="pb-5 font-bold text-4xl">
               Closed To Me
@@ -186,36 +180,27 @@ function App() {
               })}
             </div>
           </div>
-        </section> */}
-{/* 
+        </section>
         <section>
           <Cta />
-        </section> */}
-
-        {/* <section >
+        </section>
+        <section >
         <div className="flex justify-between py-7">
           <h1 className="text-4xl font-bold">Latest Elyx Auctions For You </h1>
           <div className="flex gap-1">
-         
             <button className="bg-gray-200 text-black hover:bg-[#0C50CA] hover:text-white px-2 py-3 text-[24px] rounded">ACTIVE BID</button>
-
             <button className="bg-gray-200 text-black hover:bg-[#0C50CA] hover:text-white px-2 py-3 text-[24px] rounded">COMMING SOON</button>
-
             <button className="bg-gray-200 text-black hover:bg-[#0C50CA] hover:text-white px-2 py-3 text-[24px] rounded">COMPLETED</button>
-
-
            </div>
         </div>
         <Products/>
-        </section> */}
-
+        </section>
         <section>
           <PopularItems />
         </section>
         <section className="bg-[#F8F8FF] w-full">
           <div className="flex flex-wrap justify-center gap-7 "></div>
         </section>
-
         <section>
           <div>
             <Example />
