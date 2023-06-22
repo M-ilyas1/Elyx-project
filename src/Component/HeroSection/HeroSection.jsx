@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Img from "../../image/img.png";
+import Img from "../../images/img.png";
 import Button from "../Button/Button";
 import TimeBtn from "./TimeBtn";
 
