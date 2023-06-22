@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-import ReviewCard from "../ReviewCard/ReviewCrad";
+import ReviewCard from '../ReviewCard/ReviewCrad'
 
 export default function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -9,9 +9,9 @@ export default function Carousel() {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % 4);
   };
 
-  // const nextSlide = () => {
-  //   setCurrentSlide((prevSlide) => (prevSlide === 0 ? +3 : prevSlide - 1));
-  // };
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === 0 ? +3 : prevSlide - 1));
+  };
 
   return (
     <div className=" ">
@@ -24,7 +24,7 @@ export default function Carousel() {
           <button onClick={previousSlide}>
             <BsArrowLeftShort className="border-2 border-blue-700 w-[48px] h-[48px] p-1 text-4xl rounded-[100px] hover:bg-blue-700 hover:text-white hover:cursor-pointer m-1" />
           </button>
-          <button type="button">
+          <button onClick={nextSlide} type="button">
             <BsArrowRightShort className="border-2 border-blue-700 w-[48px] h-[48px] p-1 text-4xl rounded-[100px] hover:bg-blue-700 hover:text-white hover:cursor-pointer m-1" />
           </button>
         </div>
@@ -39,7 +39,7 @@ export default function Carousel() {
                 transform: `translateX(-${currentSlide * 25}%)`,
               }}
             >
-              {[0].map((i) => (
+              {[1].map((i) => (
                 <ReviewCard key={i} />
               ))}
             </div>
