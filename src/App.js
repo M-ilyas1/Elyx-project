@@ -2,6 +2,7 @@
 import img1 from "./images/img1.png"
 import img2 from "./images/img1.png"
 import Example from "./Component/footer/footer";
+import Cardimg from "./Component/Cardimg/Cardimg";
 import {
   Header,
   FilterSection,
@@ -13,7 +14,6 @@ import {
   Products,
   HeroSection,
   PopularItems,
-  Button,
 } from "./Component";
 
 function App() {
@@ -219,6 +219,11 @@ function App() {
         <section>
           <div>
             <Example />
+          </div>
+        </section>
+        <section>
+          <div>
+          <Cardimg/>
           </div>
         </section>
       </div>
