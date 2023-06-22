@@ -5,7 +5,7 @@ import Carousel from "./Component/Carousel/Carousel";
 import Example from "./Component/footer/footer";
 import car from "./images/car.png";
 import AuctionCard from "./Component/AuctionCard/AuctionCard";
-import Product from "./Component/Product/Product";
+import Cta from "./Component/Cta/Cta";
 import HeroSection from "./Component/HeroSection/HeroSection";
 import PopularItems from "./Component/PopularItems/PopularItems";
 
@@ -183,7 +183,7 @@ function App() {
         </section>
 
         <section>
-          <Product />
+          <Cta />
         </section>
         <section>
           <PopularItems />

@@ -2,7 +2,7 @@
 import React from 'react';
 import image from '../../images/car.jpg';
 
-function Product() {
+function Cta() {
 const sectionStyle = {
 backgroundImage: `url(${image})`,
 backgroundSize: 'cover',
@@ -30,4 +30,4 @@ PLACE BID
 );
 }
 
-export default Product;
+export default Cta;
