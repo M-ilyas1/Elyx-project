@@ -1,5 +1,5 @@
 import React from "react";
-import bike1 from '../../images/bike1.jpeg';
+import {img1,img2,img3,img4,img5,img6,img7,img8} from "..//../images/index.js"
   const data = [
     {
       id: 1,
@@ -8,7 +8,7 @@ import bike1 from '../../images/bike1.jpeg';
       model: "1990",
       engine: "7WD",
       location: "California,USA",
-      image: bike1,
+      image: img1,
     },
     {
       id: 2,
@@ -17,7 +17,8 @@ import bike1 from '../../images/bike1.jpeg';
       model: "2990",
       engine: "7WD",
       location: "California,USA",
-      image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rbij6UaMWZepF46PxDE2lscOZ3o1ivrrti1Oxu-sFg&s`,
+      image: img2,
+
     },
     {
       id: 3,
@@ -26,7 +27,7 @@ import bike1 from '../../images/bike1.jpeg';
       model: "3990",
       engine: "7WD",
       location: "Californsia,USA",
-      image:bike1
+      image:img3
     },
     {
       id: 4,
@@ -35,7 +36,7 @@ import bike1 from '../../images/bike1.jpeg';
       model: "4990",
       engine: "7WD",
       location: "California,USA",
-      image: bike1,
+      image: img4,
     },
     {
       id: 5,
@@ -44,7 +45,7 @@ import bike1 from '../../images/bike1.jpeg';
       model: "5990",
       engine: "7WD",
       location: "California,USA",
-      image: bike1,
+      image: img5,
     },
     {
       id: 6,
@@ -53,7 +54,7 @@ import bike1 from '../../images/bike1.jpeg';
       model: "6990",
       engine: "7WD",
       location: "California,USA",
-      image: bike1,
+      image: img6,
     },
     {
       id: 7,
@@ -62,7 +63,7 @@ import bike1 from '../../images/bike1.jpeg';
       model: "7990",
       engine: "7WD",
       location: "California,USA",
-      image: bike1,
+      image: img7,
     },
     {
       id: 8,
@@ -71,7 +72,7 @@ import bike1 from '../../images/bike1.jpeg';
       model: "8990",
       engine: "7WD",
       location: "California,USA",
-      image: bike1,
+      image: img8,
     },
   ];
  const Products = () => {

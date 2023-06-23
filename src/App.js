@@ -1,7 +1,6 @@
-// import car from "./images/car.png";
-import img1 from "./images/img1.png"
-import img2 from "./images/img1.png"
+import {img1,img2,img3,img4,img5,img6,img7,img8} from "./images/index.js"
 import Example from "./Component/footer/footer";
+import Cardimg from "./Component/Cardimg/Cardimg";
 import {
   Header,
   FilterSection,
@@ -39,7 +38,7 @@ function App() {
       model: "3990",
       engine: "3WD",
       location: "Californsia,USA",
-      image: img1,
+      image: img3,
     },
     {
       price: "$400000",
@@ -47,7 +46,7 @@ function App() {
       model: "4990",
       engine: "4WD",
       location: "California,USA",
-      image: img1,
+      image: img4,
     },
     {
       price: "$5000000",
@@ -55,7 +54,7 @@ function App() {
       model: "5990",
       engine: "5WD",
       location: "California,USA",
-      image: img1,
+      image: img5,
     },
     {
       price: "$6000000",
@@ -63,7 +62,7 @@ function App() {
       model: "6990",
       engine: "6WD",
       location: "California,USA",
-      image: img1,
+      image: img6,
     },
     {
       price: "$7000000",
@@ -71,7 +70,7 @@ function App() {
       model: "7990",
       engine: "7WD",
       location: "California,USA",
-      image: img1,
+      image: img7,
     },
     {
       price: "$800000",
@@ -79,7 +78,7 @@ function App() {
       model: "8990",
       engine: "8WD",
       location: "California,USA",
-      image: img1,
+      image: img8,
     },
   ];
   const AuctionData4=[
@@ -117,14 +116,98 @@ function App() {
     },
   ]
   return (
+    <div>
     <section className="flex justify-center items-center">
       <div className="container">
         <header>
           <Header />
         </header>
          
-         <section>
+        <section>
           <FilterSection/>
+        </section>
+
+        <section className="w-full flex justify-center">
+          <div className="px-[110px]">
+            <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
+              Lattest Auctions
+            </h1>
+            <hr className=" pb-7"/>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
+              {AuctionData8.map((item) => {
+                return (
+                  <AuctionCard
+                    price={item.price}
+                    name={item.name}
+                    model={item.model}
+                    engine={item.engine}
+                    location={item.location}
+                    image={item.image}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </section> 
+
+
+        <section className="p-[110px]">
+          <div>
+            <h1 className="pb-5 font-bold text-4xl">
+              Closed To Me
+            </h1>
+            <hr className=" pb-7" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
+              {AuctionData4.map((item) => {
+                return (
+                  <AuctionCard
+                    price={item.price}
+                    name={item.name}
+                    model={item.model}
+                    engine={item.engine}
+                    location={item.location}
+                    image={item.image}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+
+        <section >
+        <div className=" flex justify-between pt-16 px-[110px] flex-wrap">
+          <h1 className="text-4xl font-bold">Latest Elyx Auctions For You </h1>
+          <div className="flex gap-1">
+         
+            <button className="bg-gray-200 text-black hover:bg-[#0C50CA] hover:text-white px-2 py-3 text-[24px] rounded">ACTIVE BID</button>
+
+            <button className="bg-gray-200 text-black hover:bg-[#0C50CA] hover:text-white px-2 py-3 text-[24px] rounded">COMMING SOON</button>
+
+            <button className="bg-gray-200 text-black hover:bg-[#0C50CA] hover:text-white px-2 py-3 text-[24px] rounded">COMPLETED</button>
+
+
+           </div>
+        </div>
+        <Products/>
+        </section>
+
+
+        {/* random work end here*/}
+
+
+        {/* <header>
+          <Header />
+        </header>
+         
+        <section>
+          <FilterSection/>
+        </section>
+
+        <section>
+          <div>
+          <Cardimg/>
+          </div>
         </section>
         
         <section>
@@ -133,7 +216,7 @@ function App() {
          
         <section>
           <HeroBanner2/>
-        </section>   
+        </section>  
                  
         <section className="w-full flex justify-center">
           <div className="px-[110px]">
@@ -157,8 +240,8 @@ function App() {
             </div>
           </div>
         </section> 
-        <section className="bg-[#F8F8ff] p-[30px] w-[1920px] flex flex-col justify-center items-center  ">
-          <div className="  justify-center text-center ">
+        <section className="bg-[#F8F8FF] p-[30px]  ">
+          <div className=" justify-center text-center ">
             <Carousel/>
           </div>
         </section>
@@ -219,8 +302,11 @@ function App() {
             <Example />
           </div>
         </section>
+         */}
       </div>
     </section>
+    </div>
   );
 }
 export default App;
+
