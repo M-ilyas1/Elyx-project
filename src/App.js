@@ -13,7 +13,6 @@ import {
   Products,
   HeroSection,
   PopularItems,
-  Button,
 } from "./Component";
 
 function App() {
@@ -118,9 +117,8 @@ function App() {
     },
   ]
   return (
-    <div >
     <section className="flex justify-center items-center">
-      <div>
+      <div className="container">
         <header>
           <Header />
         </header>
@@ -129,15 +127,15 @@ function App() {
           <FilterSection/>
         </section>
         
-         {/* <section>
+        <section>
           <HeroSection />
         </section>     
          
         <section>
           <HeroBanner2/>
-        </section>    */}
+        </section>   
                  
-        {/* <section className="w-full flex justify-center">
+        <section className="w-full flex justify-center">
           <div className="px-[110px]">
             <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
               Lattest Auctions
@@ -158,14 +156,14 @@ function App() {
               })}
             </div>
           </div>
-        </section>  */}
+        </section> 
         <section className="bg-[#F8F8ff] p-[30px] w-[1920px] flex flex-col justify-center items-center  ">
           <div className="  justify-center text-center ">
             <Carousel/>
           </div>
         </section>
 
-        {/* <section className="p-[110px]">
+        <section className="p-[110px]">
           <div>
             <h1 className="pb-5 font-bold text-4xl">
               Closed To Me
@@ -186,13 +184,13 @@ function App() {
               })}
             </div>
           </div>
-        </section> */}
-{/* 
+        </section>
+
         <section>
           <Cta />
-        </section> */}
+        </section>
 
-        {/* <section >
+        <section >
         <div className="flex justify-between py-7">
           <h1 className="text-4xl font-bold">Latest Elyx Auctions For You </h1>
           <div className="flex gap-1">
@@ -207,7 +205,7 @@ function App() {
            </div>
         </div>
         <Products/>
-        </section> */}
+        </section>
 
         <section>
           <PopularItems />
@@ -223,7 +221,6 @@ function App() {
         </section>
       </div>
     </section>
-    </div>
   );
 }
 export default App;
