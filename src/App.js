@@ -105,7 +105,7 @@ function App() {
       model: "2990",
       engine: "2WD",
       location: "California,USA",
-      image: car1,
+      image: car2,
     },
     {
       price: "$300000",
@@ -113,7 +113,7 @@ function App() {
       model: "3990",
       engine: "3WD",
       location: "Californsia,USA",
-      image: car8,
+      image: car1,
     },
     {
       price: "$400000",
