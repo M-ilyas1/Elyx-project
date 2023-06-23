@@ -3,7 +3,7 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 const data = [
   {
     id: 1,
-    name: "Muhammad Ilyas",
+    name: "Anne Johnson",
     avatar: "https://ca.slack-edge.com/T01TCUZ0490-U050LNWQ9B8-d728b6789b23-512",
     rating: 3,
     review: "Kinda normal app review",
@@ -25,7 +25,7 @@ const data = [
    {
     id: 4,
     name: "Muhammad Saqlain",
-    avatar: "https://ca.slack-edge.com/T01TCUZ0490-U050LNWMWH4-f889aee8bdb9-72",
+    avatar: "https://avatars.githubusercontent.com/u/104670161?v=4",
     rating: 4,
     review: "This app really Amizing",
   }
@@ -55,7 +55,7 @@ function ReviewCard() {
         return (
           <div
             key={reviewData.id}
-            className="h-[350px] w-[290px] bg-white gap-5 pt-[55px] rounded-lg "
+            className="h-[350px] w-[336px] bg-white text-center pl-10 pr-10 pt-[55px] rounded-lg "
           >
             <img
               src={reviewData.avatar}
