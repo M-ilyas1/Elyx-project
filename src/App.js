@@ -118,14 +118,91 @@ function App() {
     },
   ]
   return (
-    <div >
+    <div>
     <section className="flex justify-center items-center">
       <div className="container">
         <header>
           <Header />
         </header>
          
-         <section>
+        <section>
+          <FilterSection/>
+        </section>
+
+        <section className="w-full flex justify-center">
+          <div className="px-[110px]">
+            <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
+              Lattest Auctions
+            </h1>
+            <hr className=" pb-7"/>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
+              {AuctionData8.map((item) => {
+                return (
+                  <AuctionCard
+                    price={item.price}
+                    name={item.name}
+                    model={item.model}
+                    engine={item.engine}
+                    location={item.location}
+                    image={item.image}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </section> 
+
+
+        <section className="p-[110px]">
+          <div>
+            <h1 className="pb-5 font-bold text-4xl">
+              Closed To Me
+            </h1>
+            <hr className=" pb-7" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
+              {AuctionData4.map((item) => {
+                return (
+                  <AuctionCard
+                    price={item.price}
+                    name={item.name}
+                    model={item.model}
+                    engine={item.engine}
+                    location={item.location}
+                    image={item.image}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+
+        <section >
+        {/* <div className=" flex justify-between py-7 px-[110px]">
+          <h1 className="text-4xl font-bold">Latest Elyx Auctions For You </h1>
+          <div className="flex gap-1">
+         
+            <button className="bg-gray-200 text-black hover:bg-[#0C50CA] hover:text-white px-2 py-3 text-[24px] rounded">ACTIVE BID</button>
+
+            <button className="bg-gray-200 text-black hover:bg-[#0C50CA] hover:text-white px-2 py-3 text-[24px] rounded">COMMING SOON</button>
+
+            <button className="bg-gray-200 text-black hover:bg-[#0C50CA] hover:text-white px-2 py-3 text-[24px] rounded">COMPLETED</button>
+
+
+           </div>
+        </div> */}
+        <Products/>
+        </section>
+
+
+        {/* random work end here*/}
+
+
+        {/* <header>
+          <Header />
+        </header>
+         
+        <section>
           <FilterSection/>
         </section>
 
@@ -135,7 +212,7 @@ function App() {
           </div>
         </section>
         
-       <section>
+        <section>
           <HeroSection />
         </section>     
          
@@ -227,7 +304,7 @@ function App() {
             <Example />
           </div>
         </section>
-        
+         */}
       </div>
     </section>
     </div>

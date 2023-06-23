@@ -77,11 +77,11 @@ import bike1 from '../../images/bike1.jpeg';
  const Products = () => {
     return (
 
-      <div className="grid justify-items-center sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-3  xl:grid-cols-4 gap-3">
+      <div className="p-[110px] grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
         {data.map((data) => (
-          <div className="main font-[poppins]" key={data.id}>
+          <div className="main" key={data.id}>
             <div className="image relative">
-              <img className="w-[336px] h-[240px]" src={data.image} alt={data.name} />
+              <img className="w-[100%] h-[10%]" src={data.image} alt={data.name} />
               <div className="bg-blue-700 price absolute bottom-3 left-3 rounded">
                 <h1 className="py-2 px-2 ml-1 font-bold line-height-18px text-white font-size-22px leading-5">
                   <span className="pr-2">
@@ -92,7 +92,7 @@ import bike1 from '../../images/bike1.jpeg';
               </div>
             </div>
             <div className="content">
-              <h1 className="font-semibold font-size-18px line-height-26px w-[280px] h-[48px] ml-6 pt-5 capitalize text-lg tracking-wider">
+              <h1 className="font-semibold font-size-18px line-height-26px ml-1 pt-5 capitalize text-lg tracking-wider pl-5">
                 {data.model} {data.name} {data.engine}
               </h1>
               <p className="capitalize font-normal font-size-14px line-height-14px text-sm ml-6 mt-10">
