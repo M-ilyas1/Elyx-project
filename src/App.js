@@ -120,7 +120,7 @@ function App() {
   return (
     <div >
     <section className="flex justify-center items-center">
-      <div>
+      <div className="container">
         <header>
           <Header />
         </header>
