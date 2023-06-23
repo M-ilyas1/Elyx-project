@@ -129,13 +129,13 @@ function App() {
           <FilterSection/>
         </section>
         
-      {/*  <section>
+         {/* <section>
           <HeroSection />
         </section>     
          
         <section>
           <HeroBanner2/>
-        </section>   */}
+        </section>    */}
                  
         {/* <section className="w-full flex justify-center">
           <div className="px-[110px]">
@@ -159,8 +159,8 @@ function App() {
             </div>
           </div>
         </section>  */}
-        <section className="bg-green-900 p-[30px] w-[1920px] flex flex-col justify-center items-center  ">
-          <div className=" justify-center text-center ">
+        <section className="bg-[#F8F8ff] p-[30px] w-[1920px] flex flex-col justify-center items-center  ">
+          <div className="  justify-center text-center ">
             <Carousel/>
           </div>
         </section>
