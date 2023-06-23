@@ -2,7 +2,6 @@ import { useState } from "react";
 import logo from "../../images/Logo.png";
 import Button from "../Button/Button";
 import { Links } from "./Links";
-
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const link = [
@@ -12,10 +11,9 @@ export default function NavBar() {
     "How it Works",
     "Get in Email",
   ];
-
   return (
-    <nav className="main">
-      <div className="w-full justify-between items-center flex-wrap px-4 mx-auto  Nav:items-center Nav:flex Nav:px-8">
+    <nav className="container">
+      <div className="justify-between items-center flex-wrap px-4 mx-auto  Nav:items-center Nav:flex Nav:px-8">
         <div>
           <div className="flex flex-wrap items-center justify-between py-3 Nav:py-5 Nav:full">
             <a href="javascript:void(0)">
@@ -86,3 +84,14 @@ export default function NavBar() {
     </nav>
   );
 }
+
+
+
+
+
+
+
+
+
+
+

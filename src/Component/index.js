@@ -12,6 +12,7 @@ export { default as HeroSection } from './HeroSection/HeroSection';
 export { default as PopularItems } from './PopularItems/PopularItems';
 export { default as ReviewCard } from './ReviewCard/ReviewCrad';
 
+
 // for image
 // export {img1}  from '../images/img1.png';
 // export {img2}  from '../images/img2.png';

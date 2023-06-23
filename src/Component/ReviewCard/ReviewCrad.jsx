@@ -1,5 +1,4 @@
 import React from "react";
-// import avatarImage from "../../image/avatar.png";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 const data = [
   {
