@@ -10,7 +10,7 @@ export default function Carousel() {
     setCurrentSlide((prevSlide) => (prevSlide === 0 ? +3 : prevSlide - 1));
   };
   return (
-    <div className=" ">
+    <div className=" w-[1440px] ">
       <div className="flex justify-between">
         <div className="font-bold mt-2 text-2xl">
           <h1>What our clients say</h1>
