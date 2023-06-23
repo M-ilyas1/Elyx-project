@@ -211,4 +211,4 @@ function Example() {
     </footer>
   );
 }
-export default Example
+export default Example;
