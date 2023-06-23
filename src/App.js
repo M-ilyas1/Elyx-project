@@ -120,9 +120,7 @@ function App() {
   return (
     <div>
     <section className="flex justify-center items-center">
-      <div>
-        {/* random work start here*/}
-
+      <div className="container">
         <header>
           <Header />
         </header>
@@ -180,7 +178,7 @@ function App() {
 
 
         <section >
-        <div className=" flex justify-between py-7 px-[110px]">
+        {/* <div className=" flex justify-between py-7 px-[110px]">
           <h1 className="text-4xl font-bold">Latest Elyx Auctions For You </h1>
           <div className="flex gap-1">
          
@@ -192,7 +190,7 @@ function App() {
 
 
            </div>
-        </div>
+        </div> */}
         <Products/>
         </section>
 
