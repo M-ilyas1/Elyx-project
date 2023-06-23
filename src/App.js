@@ -8,14 +8,13 @@ import {
   img7,
   img8,
 } from "./images/index.js";
-import Example from "./Component/footer/footer";
 import Cardimg from "./Component/Cardimg/Cardimg";
 import {
   Header,
   FilterSection,
   HeroBanner2,
   Carousel,
-  // Example,
+  Example,
   AuctionCard,
   Cta,
   Products,
