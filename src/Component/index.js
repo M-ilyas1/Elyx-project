@@ -13,7 +13,6 @@ export { default as PopularItems } from './PopularItems/PopularItems';
 export { default as ReviewCard } from './ReviewCard/ReviewCrad';
 export { default as HeaToyotacarsder } from './Toyotacars/Toyota';
 
-
 // for image
 // export {img1}  from '../images/img1.png';
 // export {img2}  from '../images/img2.png';

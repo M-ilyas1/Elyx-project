@@ -24,9 +24,9 @@ const AuctionCard = ({image,price,model,name,engine,location,...e}) => {
             src={image}
             alt={name}
           />
-          <div className="clip-polygon bg-blue-700 pr-10 price absolute z-10 bottom-0 left-0 p-1">
-            <h1 className="ml-1 font-bold line-height-18px text-white font-size-22px pl-5 leading-5">
-              <span className="text-xs font-semibold font-size-12px line-height-10px">
+          <div className="clip-polygon bg-blue-700 pr-10 price absolute bottom-0 left-0 p-1">
+            <h1 className="ml-1 font-bold text-white font-size-22px pl-5 leading-5">
+              <span className="text-xs font-semibold font-size-12px">
                 BID
               </span>
               <br />

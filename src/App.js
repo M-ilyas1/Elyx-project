@@ -1,6 +1,4 @@
-// import car from "./images/car.png";
-import img1 from "./images/img1.png"
-import img2 from "./images/img1.png"
+import {img1,img2,img3,img4,img5,img6,img7,img8} from "./images/index.js"
 import Example from "./Component/footer/footer";
 import Cardimg from "./Component/Cardimg/Cardimg";
 import {
@@ -40,7 +38,7 @@ function App() {
       model: "3990",
       engine: "3WD",
       location: "Californsia,USA",
-      image: img1,
+      image: img3,
     },
     {
       price: "$400000",
@@ -48,7 +46,7 @@ function App() {
       model: "4990",
       engine: "4WD",
       location: "California,USA",
-      image: img1,
+      image: img4,
     },
     {
       price: "$5000000",
@@ -56,7 +54,7 @@ function App() {
       model: "5990",
       engine: "5WD",
       location: "California,USA",
-      image: img1,
+      image: img5,
     },
     {
       price: "$6000000",
@@ -64,7 +62,7 @@ function App() {
       model: "6990",
       engine: "6WD",
       location: "California,USA",
-      image: img1,
+      image: img6,
     },
     {
       price: "$7000000",
@@ -72,7 +70,7 @@ function App() {
       model: "7990",
       engine: "7WD",
       location: "California,USA",
-      image: img1,
+      image: img7,
     },
     {
       price: "$800000",
@@ -80,7 +78,7 @@ function App() {
       model: "8990",
       engine: "8WD",
       location: "California,USA",
-      image: img1,
+      image: img8,
     },
   ];
   const AuctionData4=[
@@ -178,7 +176,7 @@ function App() {
 
 
         <section >
-        {/* <div className=" flex justify-between py-7 px-[110px]">
+        <div className=" flex justify-between pt-16 px-[110px] flex-wrap">
           <h1 className="text-4xl font-bold">Latest Elyx Auctions For You </h1>
           <div className="flex gap-1">
          
@@ -190,7 +188,7 @@ function App() {
 
 
            </div>
-        </div> */}
+        </div>
         <Products/>
         </section>
 
