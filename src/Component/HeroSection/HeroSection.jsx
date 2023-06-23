@@ -38,8 +38,8 @@ function HeroSection() {
   return (
     <>
       <div className="w-full h-auto flex relative ">
-        <div className="w-full 2xl:w-[70%] xl:w-[70%] lg:w-[70%] bg-[#353535] flex md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse">
-          <div className="w-[705px] sm:w-[600px] xs:w-[310px] my-[118px] ml-[240px] lg:ml-[60px] xl:w-[550px] lg:w-[400px] md:my-[100px] sm:ml-[10px] xs:mx-auto font-[Poppins] text-white xs:mt-[18px] md:ml-[90px]">
+        <div className=" w-full 2xl:w-[70%] xl:w-[70%] lg:w-[70%] bg-[#353535] flex md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse">
+          <div className="w-[705px] sm:w-[600px] xs:w-[310px] my-[118px] ml-[240px] lg:ml-[20px] xl:w-[550px] lg:w-[400px] md:my-[100px] sm:ml-[10px] xs:mx-auto font-[Poppins] text-white xs:mt-[18px] md:ml-[20px]">
             <h1 className="text-[48px] lg:text-[30px] mb-2 lg:mb-0 xs:text-[28px]">
               2014 Mercedes-Benz E350 4MATIC Wagon
             </h1>
@@ -82,7 +82,7 @@ function HeroSection() {
               />
             </div>
           </div>
-          <div className="2xl:absolute 2xl:right-[15%] 2xl:top-[1%] xl:absolute xl:right-[5%] xl:top-[0%] lg:absolute lg:right-[4%] lg:top-[3%] md:ml-[100px] md:mt-[50px] sm:mx-auto xs:mx-auto border-black border-[20px] border-opacity-20">
+          <div className="2xl:absolute 2xl:right-[15%] 2xl:top-[1%] xl:absolute xl:right-[5%] xl:top-[0%] lg:absolute lg:right-[4%] lg:top-[3%] md:ml-[20px] md:mt-[50px] sm:mx-auto xs:mx-auto border-black border-[20px] border-opacity-20">
             <img
               src={Img}
               alt=""

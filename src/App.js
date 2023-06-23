@@ -13,7 +13,7 @@ import {
   Header,
   FilterSection,
   HeroBanner2,
-  Carousel,
+  // Carousel,
   Example,
   AuctionCard,
   Cta,
@@ -126,7 +126,7 @@ function App() {
   return (
     <div>
       <section className="flex justify-center items-center">
-        <div className="container">
+        <div>
           <header>
             <Header />
           </header>
@@ -201,11 +201,11 @@ function App() {
             <Products />
           </section>
 
-          <section className="bg-[#F8F8FF] p-[30px]  ">
+          {/* <section className="bg-[#F8F8FF] p-[30px]  ">
             <div className=" justify-center text-center ">
               <Carousel />
             </div>
-          </section>
+          </section> */}
 
           <section>
             <Cta />
