@@ -87,7 +87,7 @@ function App() {
       model: "8990",
       engine: "8WD",
       location: "California,USA",
-      image: car8,
+      image: car1,
     },
   ];
   const AuctionData4 = [
@@ -97,7 +97,7 @@ function App() {
       model: "1990",
       engine: "1WD",
       location: "California,USA",
-      image: car6,
+      image: car1,
     },
     {
       price: "$200000",
@@ -105,7 +105,7 @@ function App() {
       model: "2990",
       engine: "2WD",
       location: "California,USA",
-      image: car7,
+      image: car1,
     },
     {
       price: "$300000",
@@ -122,6 +122,7 @@ function App() {
       engine: "4WD",
       location: "California,USA",
       image: car2,
+
     },
   ];
   return (
