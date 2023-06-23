@@ -12,8 +12,8 @@ import Img9 from "../../images/9.ico";
 
 export default function FilterSection() {
   return (
-    <section className="flex justify-center items-center" >
-        <div className="flex flex-wrap">
+    <section className="flex justify-around items-center" >
+        <div className="container flex flex-wrap">
           <FilterDiv image={Img1} />
           <FilterDiv image={Img2} />
           <FilterDiv image={Img3} />
@@ -23,6 +23,8 @@ export default function FilterSection() {
           <FilterDiv image={Img7} />
           <FilterDiv image={Img8} />
           <FilterDiv image={Img9} />
+          <FilterDiv image={Img4} />
+
         </div>
     </section>
   );
