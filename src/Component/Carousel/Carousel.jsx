@@ -10,12 +10,12 @@ export default function Carousel() {
     setCurrentSlide((prevSlide) => (prevSlide === 0 ? +3 : prevSlide - 1));
   };
   return (
-    <div className=" w-[1440px] ">
-      <div className="flex justify-between">
-        <div className="font-bold mt-2 text-2xl">
+    <div className="">
+      <div className="container flex justify-between">
+        <div className="font-bold mt-2 ml-10 text-2xl">
           <h1>What our clients say</h1>
         </div>
-        <div className="">
+        <div className="mr-10">
           <button onClick={previousSlide}>
             <BsArrowLeftShort className="border-2 border-blue-700 w-[48px] h-[48px] p-1 text-4xl rounded-[100px] hover:bg-blue-700 hover:text-white hover:cursor-pointer m-1" />
           </button>
@@ -28,7 +28,7 @@ export default function Carousel() {
         <div className="">
           <div className="overflow-hidden ">
             <div
-              className="flex transition-transform duration-300 ease-in-out gap-6"
+              className=" container  flex flex-wrap justify-center items-center transition-transform duration-300 ease-in-out gap-5"
               style={{
                 transform: `translateX(-${currentSlide * 25}%)`,
               }}
