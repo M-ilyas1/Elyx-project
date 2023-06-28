@@ -1,13 +1,21 @@
 import React from "react";
 import {
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  img6,
-  img7,
-  img8,
+  car1,
+  car2,
+  car3,
+  car4,
+  car5,
+  car6,
+  car7,
+  car8,
+  // img1,
+  // img2,
+  // img3,
+  // img4,
+  // img5,
+  // img6,
+  // img7,
+  // img8,
 } from "../../images/index";
 import { FilterSection } from "../../Component";
 import Cardimg from "../../Component/Cardimg/Cardimg";
@@ -26,7 +34,7 @@ export default function Home() {
       model: "1990",
       engine: "1WD",
       location: "California,USA",
-      image: img1,
+      image: car1,
     },
     {
       price: "$200000",
@@ -34,7 +42,7 @@ export default function Home() {
       model: "2990",
       engine: "2WD",
       location: "California,USA",
-      image: img2,
+      image: car2,
     },
     {
       price: "$300000",
@@ -42,7 +50,7 @@ export default function Home() {
       model: "3990",
       engine: "3WD",
       location: "Californsia,USA",
-      image: img3,
+      image: car3,
     },
     {
       price: "$400000",
@@ -50,7 +58,7 @@ export default function Home() {
       model: "4990",
       engine: "4WD",
       location: "California,USA",
-      image: img4,
+      image: car4,
     },
     {
       price: "$5000000",
@@ -58,7 +66,7 @@ export default function Home() {
       model: "5990",
       engine: "5WD",
       location: "California,USA",
-      image: img5,
+      image: car5,
     },
     {
       price: "$6000000",
@@ -66,7 +74,7 @@ export default function Home() {
       model: "6990",
       engine: "6WD",
       location: "California,USA",
-      image: img6,
+      image: car6,
     },
     {
       price: "$7000000",
@@ -74,7 +82,7 @@ export default function Home() {
       model: "7990",
       engine: "7WD",
       location: "California,USA",
-      image: img7,
+      image: car7,
     },
     {
       price: "$800000",
@@ -82,7 +90,7 @@ export default function Home() {
       model: "8990",
       engine: "8WD",
       location: "California,USA",
-      image: img8,
+      image: car8,
     },
   ];
   const AuctionData4 = [
@@ -92,7 +100,7 @@ export default function Home() {
       model: "1990",
       engine: "1WD",
       location: "California,USA",
-      image: img1,
+      image: car1,
     },
     {
       price: "$200000",
@@ -100,7 +108,7 @@ export default function Home() {
       model: "2990",
       engine: "2WD",
       location: "California,USA",
-      image: img1,
+      image: car1,
     },
     {
       price: "$300000",
@@ -108,7 +116,7 @@ export default function Home() {
       model: "3990",
       engine: "3WD",
       location: "Californsia,USA",
-      image: img1,
+      image: car1,
     },
     {
       price: "$400000",
@@ -116,7 +124,7 @@ export default function Home() {
       model: "4990",
       engine: "4WD",
       location: "California,USA",
-      image: img1,
+      image: car1,
     },
   ];
   return (
