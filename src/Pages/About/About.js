@@ -13,7 +13,7 @@ import HeroBanner1 from "../../Component/HeroBanner1/HeroBanner1";
 import Cardimg from "../../Component/Cardimg/Cardimg";
 import AuctionCard from "../../Component/AuctionCard/AuctionCard";
 import Cta from "../../Component/Cta/Cta";
-
+import Reviews from "../../Component/Reviews/Reviews";
 
 function About() {
   const AuctionData8 = [
@@ -88,7 +88,7 @@ function About() {
         <HeroBanner1 />
       </section>
       <section>
-          <Cardimg />
+        <Cardimg />
       </section>
       <section className="w-full flex justify-center mt-28">
         <div className="px-[110px]">
@@ -114,6 +114,11 @@ function About() {
       </section>
       <section>
         <Cta />
+      </section>
+      <section className="bg-[#F8F8FF] p-[50px] w-full">
+        <div className="flex flex-wrap justify-center gap-7">
+          <Reviews />
+        </div>
       </section>
     </div>
   );
