@@ -9,9 +9,9 @@ export default function NavBar() {
   const link = [
     {name:"Home",link:"/"},
     {name:"About",link:"/about"},
-    {name:"Submit For Auction",link:"/Submit For Auction"},
-    {name:"How it Works",link:"/How it Works"},
-    {name:"Get in Email",link:"/Get in Email"},
+    {name:"Submit For Auction",link:"/SubmitForAuction"},
+    {name:"How it Works",link:"/HowitWorks"},
+    {name:"Get in Email",link:"/GetinEmail"},
   ];
   return (
     <nav className="container">
