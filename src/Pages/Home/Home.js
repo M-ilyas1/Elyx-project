@@ -100,7 +100,7 @@ export default function Home() {
       model: "1990",
       engine: "1WD",
       location: "California,USA",
-      image: car6,
+      image: car1,
     },
     {
       price: "$200000",
@@ -108,7 +108,7 @@ export default function Home() {
       model: "2990",
       engine: "2WD",
       location: "California,USA",
-      image: car7,
+      image: car1,
     },
     {
       price: "$300000",
@@ -116,7 +116,7 @@ export default function Home() {
       model: "3990",
       engine: "3WD",
       location: "Californsia,USA",
-      image: car8,
+      image: car1,
     },
     {
       price: "$400000",
@@ -124,7 +124,7 @@ export default function Home() {
       model: "4990",
       engine: "4WD",
       location: "California,USA",
-      image: car2,
+      image: car1,
     },
   ];
   return (
