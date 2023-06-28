@@ -1,15 +1,17 @@
 import { useState } from "react";
 import logo from "../../images/Logo.png";
 import Button from "../Button/Button";
+// import { Outlet, Link } from "react-router-dom";
 import { Links } from "./Links";
+
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const link = [
-    "Home",
-    "About",
-    "Submit For Auction",
-    "How it Works",
-    "Get in Email",
+    {name:"Home",link:"/"},
+    {name:"About",link:"/about"},
+    {name:"Submit For Auction",link:"/Submit For Auction"},
+    {name:"How it Works",link:"/How it Works"},
+    {name:"Get in Email",link:"/Get in Email"},
   ];
   return (
     <nav className="container">
@@ -68,8 +70,8 @@ export default function NavBar() {
             } md:flex-1 justify-self-center pb-3 mt-8 Nav:block Nav:pb-0 Nav:mt-0`}
           >
             <ul className="items-center justify-center space-y-8 Nav:flex Nav:space-x-6 Nav:space-y-0">
-              {link.map((item) => (
-                <Links title={item} className={"block"} key={item} />
+              {link.map((item,index) => (
+                <Links link={item.link} title={item.name} className={"block"} key={index} />
               ))}
               <Button
               label="Login / Signup"
