@@ -14,8 +14,8 @@ borderRadius: '50px',
 };
 
 return (
-<section className="bg-gray-200 flex items-center justify-center py-20">
-<div style={sectionStyle} className="max-w-1920 mx-auto pt-12 px-12 md:px-24 lg:px-48">
+<section className="bg-gray-100 container flex items-center justify-center py-20">
+<div style={sectionStyle} className=" mx-auto pt-12 px-12 md:px-24 lg:px-48">
 <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight mb-6">
 Simply Buy Your Favorite Product Online
 </h1>
