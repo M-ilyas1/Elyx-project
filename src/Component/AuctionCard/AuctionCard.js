@@ -17,7 +17,7 @@ const AuctionCard = ({image,price,model,name,engine,location,...e}) => {
 
   return (
     <div>
-      <div className="main">
+      <div className=" main">
         <div className="image relative">
           <img
             className="w-[100%] h-[100%]"

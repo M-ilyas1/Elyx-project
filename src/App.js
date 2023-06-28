@@ -7,6 +7,14 @@ import {
   car6,
   car7,
   car8,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
 } from "./images/index.js";
 import Cardimg from "./Component/Cardimg/Cardimg";
 import {
@@ -21,6 +29,7 @@ import {
   HeroSection,
   PopularItems,
 } from "./Component";
+import ProductList from "./Component/ProductList/ProductList.js";
 
 function App() {
   const AuctionData8 = [
@@ -124,10 +133,87 @@ function App() {
 
     },
   ];
+  
+  const products= [
+    {
+      id: 1,
+      price: "$100000",
+      name: "mitsubishi delica star wagon exceed",
+      model: "1990",
+      engine: "7WD",
+      location: "California,USA",
+      image: img1,
+    },
+    {
+      id: 2,
+      price: "$200000",
+      name: "mitsubishi delica star wagon exceed",
+      model: "2990",
+      engine: "7WD",
+      location: "California,USA",
+      image: img2,
+
+    },
+    {
+      id: 3,
+      price: "$300000",
+      name: "mitsubishi delica star wagon exceed",
+      model: "3990",
+      engine: "7WD",
+      location: "Californsia,USA",
+      image:img3
+    },
+    {
+      id: 4,
+      price: "$400000",
+      name: "mitsubishi delica star wagon exceed",
+      model: "4990",
+      engine: "7WD",
+      location: "California,USA",
+      image: img4,
+    },
+    {
+      id: 5,
+      price: "$500000",
+      name: "mitsubishi delica star wagon exceed",
+      model: "5990",
+      engine: "7WD",
+      location: "California,USA",
+      image: img5,
+    },
+    {
+      id: 6,
+      price: "$600000",
+      name: "mitsubishi delica star wagon exceed",
+      model: "6990",
+      engine: "7WD",
+      location: "California,USA",
+      image: img6,
+    },
+    {
+      id: 7,
+      price: "$700000",
+      name: "mitsubishi delica star wagoon exceed",
+      model: "7990",
+      engine: "7WD",
+      location: "California,USA",
+      image: img7,
+    },
+    {
+      id: 8,
+      price: "$800000",
+      name: "mitsubishi delica star wagon exceed",
+      model: "8990",
+      engine: "7WD",
+      location: "California,USA",
+      image: img8,
+    },
+  ]
   return (
     <div>
       <section className="flex justify-center items-center">
         <div className="container">
+
           <header>
             <Header />
           </header>
@@ -136,8 +222,8 @@ function App() {
             <FilterSection />
           </section>
 
-          <section className="w-full flex justify-center mt-28">
-            <div className="px-[110px]">
+          <section className="mt-28">
+            <div className="container">
               <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
                 Lattest Auctions
               </h1>
@@ -158,9 +244,11 @@ function App() {
               </div>
             </div>
           </section>
+          
+          
 
-          <section className="p-[110px]">
-            <div>
+          <section className="">
+            <div className="container mt-16">
               <h1 className="pb-5 font-bold text-4xl">Closed To Me</h1>
               <hr className=" pb-7" />
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
@@ -180,10 +268,10 @@ function App() {
             </div>
           </section>
 
-          <section>
-            <div className=" flex justify-between pt-16 px-[110px] flex-wrap">
+          <section className="container">
+            <div className="flex justify-between py-16 flex-wrap">
               <h1 className="text-4xl font-bold">
-                Latest Elyx Auctions For You{" "}
+                Latest Elyx Auctions For You
               </h1>
               <div className="flex gap-1">
                 <button className="bg-gray-200 text-black hover:bg-[#0C50CA] hover:text-white px-2 py-3 text-[24px] rounded">
@@ -199,7 +287,7 @@ function App() {
                 </button>
               </div>
             </div>
-            <Products />
+            <Products/>
           </section>
 
           <section className="bg-[#F8F8FF] p-[30px]  ">
@@ -238,6 +326,25 @@ function App() {
               <Example />
             </div>
           </section>
+
+                {/* product section start */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
+            {products.map((detail=>{
+              return(
+              <Products
+              price={detail.price}
+              name={detail.name}
+              model={detail.model}
+              engine={detail.engine}
+              location={detail.location}
+              image={detail.image}
+              />
+              )
+            }))}
+          </div>
+                {/* product section end */}
+
+
         </div>
       </section>
     </div>

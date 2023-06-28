@@ -1,108 +1,27 @@
 import React from "react";
-import {img1,img2,img3,img4,img5,img6,img7,img8} from "..//../images/index.js"
-  const data = [
-    {
-      id: 1,
-      price: "$100000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "1990",
-      engine: "7WD",
-      location: "California,USA",
-      image: img1,
-    },
-    {
-      id: 2,
-      price: "$200000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "2990",
-      engine: "7WD",
-      location: "California,USA",
-      image: img2,
-
-    },
-    {
-      id: 3,
-      price: "$300000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "3990",
-      engine: "7WD",
-      location: "Californsia,USA",
-      image:img3
-    },
-    {
-      id: 4,
-      price: "$400000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "4990",
-      engine: "7WD",
-      location: "California,USA",
-      image: img4,
-    },
-    {
-      id: 5,
-      price: "$500000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "5990",
-      engine: "7WD",
-      location: "California,USA",
-      image: img5,
-    },
-    {
-      id: 6,
-      price: "$600000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "6990",
-      engine: "7WD",
-      location: "California,USA",
-      image: img6,
-    },
-    {
-      id: 7,
-      price: "$700000",
-      name: "mitsubishii delica star wagoon exceed",
-      model: "7990",
-      engine: "7WD",
-      location: "California,USA",
-      image: img7,
-    },
-    {
-      id: 8,
-      price: "$800000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "8990",
-      engine: "7WD",
-      location: "California,USA",
-      image: img8,
-    },
-  ];
- const Products = () => {
+ const Products = ({price,name,model,engine,location,image,...e}) => {
     return (
-
-      <div className="p-[110px] grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
-        {data.map((data) => (
-          <div className="main" key={data.id}>
+          <div className="main">
             <div className="image relative">
-              <img className="w-[100%] h-[10%]" src={data.image} alt={data.name} />
+              <img className="w-[100%] h-[10%]" src={image} alt={name} />
               <div className="bg-blue-700 price absolute bottom-3 left-3 rounded">
                 <h1 className="py-2 px-2 ml-1 font-bold line-height-18px text-white font-size-22px leading-5">
                   <span className="pr-2">
                   BID
                   </span>
-                  {data.price}
+                  {price}
                 </h1>
               </div>
             </div>
             <div className="content">
-              <h1 className="font-semibold font-size-18px line-height-26px ml-1 pt-5 capitalize text-lg tracking-wider pl-5">
-                {data.model} {data.name} {data.engine}
+              <h1 className="font-semibold font-size-18px ml-1 pt-5 capitalize text-lg tracking-wider pl-5">
+                {model} {name} {engine}
               </h1>
-              <p className="capitalize font-normal font-size-14px line-height-14px text-sm ml-6 mt-10">
-                {data.location}
+              <p className="capitalize font-normal font-size-14px text-sm ml-6 mt-1">
+                {location}
               </p>
             </div>
           </div>
-        ))}
-      </div>
     );
   };
 export default Products;
