@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { CiClock2 } from "react-icons/ci";
 
-const AuctionCard = ({image,price,model,name,engine,location,...e}) => {
+const AuctionCard = ({image,price,model,name,engine,location}) => {
 
   const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const w = setInterval(() => {
       setCurrentTime(new Date().toLocaleTimeString());
-    }, 1000);
-
-    return () => {
-      clearInterval(interval);
-    };
+    });
+    return()=>{
+      clearInterval(w)
+    }
   }, []);
 
   return (
