@@ -142,9 +142,30 @@ export default function Home() {
       </section>
       <section className="w-full flex justify-center mt-28">
         <div className="px-[110px]">
-          <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
+        
+        <div className="flex flex-wrap justify-between">
+        <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
             Lattest Auctions
           </h1>
+          <div className="tab flex gap-10">
+           <a>
+              <h2 className="transition-all duration-200 hover:border-b-2 hover:border-[#0C50CA] pb-4 hover:text-[#0C50CA] font-medium">
+                ACTIVE
+              </h2>
+            </a>
+            <a>
+              <h2 className="transition-all duration-200 hover:border-b-2 hover:border-[#0C50CA] pb-4 hover:text-[#0C50CA] font-medium">
+                COMMING SOON
+              </h2>
+            </a>
+            <a>
+              <h2 className="transition-all duration-200 hover:border-b-2 hover:border-[#0C50CA] pb-4 hover:text-[#0C50CA] font-medium">
+                COMPLETED
+              </h2>
+            </a>
+          </div>
+          </div>
+         
           <hr className=" pb-7" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
             {AuctionData8.map((item) => {
@@ -167,7 +188,7 @@ export default function Home() {
           <Carousel />
         </div>
       </section>
-      <section className="p-[110px]">
+      <section>
         <div>
           <h1 className="pb-5 font-bold text-4xl">Closed To Me</h1>
           <hr className=" pb-7" />
