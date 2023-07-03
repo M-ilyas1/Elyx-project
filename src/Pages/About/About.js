@@ -104,7 +104,7 @@ function About() {
         <div>
         <div className="flex flex-wrap justify-between items-center pb-10">
         <h1 className="font-semibold text-5xl font-[poppins] lg:pb-7">
-            Latest Elyx Auctions For You
+            Latest Elyx Auction For You
           </h1>
           <div className="tabs flex gap-2">
             <button className="transition-all duration-200 bg-gray-200 hover:text-white hover:bg-blue-700  font-medium px-2 py-4 rounded">
