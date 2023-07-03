@@ -103,7 +103,7 @@ function About() {
       <section className="w-full flex justify-center mt-28">
         <div>
         <div className="flex flex-wrap justify-between items-center pb-10">
-        <h1 className="font-semibold text-5xl font-[poppins]">
+        <h1 className="font-semibold text-5xl font-[poppins] lg:pb-7">
             Latest Elyx Auctions For You
           </h1>
           <div className="tabs flex gap-2">
