@@ -6,7 +6,7 @@ import SubmitForAuction from "./Pages/SubmitForAuction/SubmitForAuction.js";
 import HowitWorks from "./Pages/HowitWorks/HowitWorks.js";
 import GetinEmail from "./Pages/GetinEmail/GetinEmail.js";
 
-function App() {
+function App() {  
   return (
     <>
 
