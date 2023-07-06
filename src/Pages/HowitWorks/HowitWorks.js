@@ -1,7 +1,11 @@
 import React from 'react'
+import Aution from '../../Component/Auction Details/Auction'
 
 export default function HowitWorks() {
   return (
-    <div>How it Works</div>
+    <div>
+      <Aution/>
+    </div>
+
   )
 }
