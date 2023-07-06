@@ -8,15 +8,19 @@ import {
   Aution5,
   user,
   hammer,
-  img13a
-
+  img13a,
+  img14a,
+  img15a,
+  img16a,
+  img17a,
+  
 } from "../../images/index.js";
 import { BsClock, BsArrowUp, BsHash, BsQuestionCircle } from "react-icons/bs";
 import { RiShareForwardLine } from "react-icons/ri";
-import { GrFavorite } from "react-icons/gr";
+import { GrFavorite ,GrFlag } from "react-icons/gr";
 import { AiOutlineComment } from "react-icons/ai";
-import { FaRegCommentDots, } from "react-icons/fa";
-import {PiArrowElbowDownRightLight} from 'react-icons/pi'
+import { FaRegCommentDots } from "react-icons/fa";
+import { PiArrowElbowDownRightLight } from "react-icons/pi";
 
 function Aution() {
   const [currentTime, setCurrentTime] = useState(
@@ -290,27 +294,164 @@ function Aution() {
               className="w-[100%]  border-none rounded-md outline-none"
               name="gsearch "
               placeholder="Add to comments and Bids "
-            /> 
-<div className=" w-10 h-15 items-center  rounded  ">
-<AiOutlineComment className="text-4xl   bg-blue-700 rounded-md text-white"/>
-</div>
-            
+            />
+            <div className=" w-10 h-15 items-center  rounded  ">
+              <AiOutlineComment className="text-4xl   bg-blue-700 rounded-md text-white" />
+            </div>
           </div>
 
           <div>
             <div className="flex gap-2 mt-3">
-            <img src={img13a} alt="" />
-            <h1 className="mt-2">Mishal</h1>
-           <BsArrowUp className="mt-3 text-[#0C50CA] " /> 
-           <p className="text-[#0C50CA] mt-2">
-            3.2k
-            </p>
-           <p className="mt-2 opacity-70">5 Hours ago</p>
+              <img src={img13a} alt="" />
+              <h1 className="mt-2">Mishal</h1>
+              <BsArrowUp className="mt-3 text-[#0C50CA] " />
+              <p className="text-[#0C50CA] mt-2">3.2k</p>
+              <p className="mt-2 opacity-70">5 Hours ago</p>
             </div>
-            <p className="ml-12">Like the Alfa 75, this Spider was not that rare in Europe. But nowadays, it is! Whatever, an absolute unicorn for any American driver, that's for sure. ^^</p>
-<div>
-<PiArrowElbowDownRightLight/>
-</div>
+            <p className="ml-12">
+              Like the Alfa 75, this Spider was not that rare in Europe. But
+              nowadays, it is! Whatever, an absolute unicorn for any American
+              driver, that's for sure. ^^
+            </p>
+
+            <div className=" flex mt-1 ml-12 gap-10">
+            <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+            <BsArrowUp className="mt-1"/>
+            <p>20</p>
+            </button>
+
+            <div className="flex gap-1 mt-1 ">
+            <PiArrowElbowDownRightLight className="mt-1" />
+            <p>Reply</p>
+            <p></p>
+            </div>
+            <div className="gap-1 flex mt-1">
+              <GrFlag className="mt-1"/>
+              <p>Flage as inappropriate</p>
+            </div>
+            </div>
+        
+          </div>
+          <div>
+            <div className="flex gap-2 mt-3">
+              <img src={img14a} alt="" />
+              <h1 className="mt-2">Mishal</h1>
+              <BsArrowUp className="mt-3 text-[#0C50CA] " />
+              <p className="text-[#0C50CA] mt-2">3.2k</p>
+              <p className="mt-2 opacity-70">5 Hours ago</p>
+            </div>
+            <p className="ml-12">
+              Like the Alfa 75, this Spider was not that rare in Europe. But
+              nowadays, it is! Whatever, an absolute unicorn for any American
+              driver, that's for sure. ^^
+            </p>
+
+            <div className=" flex mt-1 ml-12 gap-10">
+            <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+            <BsArrowUp className="mt-1"/>
+            <p>20</p>
+            </button>
+
+            <div className="flex gap-1 mt-1 ">
+            <PiArrowElbowDownRightLight className="mt-1" />
+            <p>Reply</p>
+            <p></p>
+            </div>
+            <div className="gap-1 flex mt-1">
+              <GrFlag className="mt-1"/>
+              <p>Flage as inappropriate</p>
+            </div>
+            </div>
+            <div>
+            <div className="flex gap-2 mt-3">
+              <img src={img15a} alt="" />
+              <h1 className="mt-2">Mishal</h1>
+              <BsArrowUp className="mt-3 text-[#0C50CA] " />
+              <p className="text-[#0C50CA] mt-2">3.2k</p>
+              <p className="mt-2 opacity-70">5 Hours ago</p>
+            </div>
+            <p className="ml-12">
+              Like the Alfa 75, this Spider
+            </p>
+
+            <div className=" flex mt-1 ml-12 gap-10">
+            <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+            <BsArrowUp className="mt-1"/>
+            <p>20</p>
+            </button>
+
+            <div className="flex gap-1 mt-1 ">
+            <PiArrowElbowDownRightLight className="mt-1" />
+            <p>Reply</p>
+            <p></p>
+            </div>
+            <div className="gap-1 flex mt-1">
+              <GrFlag className="mt-1"/>
+              <p>Flage as inappropriate</p>
+            </div>
+            </div>
+          </div>
+          <div>
+            <div className="flex gap-2 mt-3">
+              <img src={img16a} alt="" />
+              <h1 className="mt-2">Mishal</h1>
+              <BsArrowUp className="mt-3 text-[#0C50CA] " />
+              <p className="text-[#0C50CA] mt-2">3.2k</p>
+              <p className="mt-2 opacity-70">5 Hours ago</p>
+            </div>
+            <p className="ml-12">
+              
+            </p>
+
+            <div className=" flex mt-1 ml-12 gap-10">
+            <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+            <BsArrowUp className="mt-1"/>
+            <p>20</p>
+            </button>
+
+            <div className="flex gap-1 mt-1 ">
+            <PiArrowElbowDownRightLight className="mt-1" />
+            <p>Reply</p>
+            <p></p>
+            </div>
+            <div className="gap-1 flex mt-1">
+              <GrFlag className="mt-1"/>
+              <p>Flage as inappropriate</p>
+            </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="flex gap-2 mt-3">
+              <img src={img17a} alt="" />
+              <h1 className="mt-2">Mishal</h1>
+              <BsArrowUp className="mt-3 text-[#0C50CA] " />
+              <p className="text-[#0C50CA] mt-2">3.2k</p>
+              <p className="mt-2 opacity-70">5 Hours ago</p>
+            </div>
+            <p className="ml-12">
+              Like the Alfa 75,
+            </p>
+
+            <div className=" flex mt-1 ml-12 gap-10">
+            <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+            <BsArrowUp className="mt-1"/>
+            <p>20</p>
+            </button>
+
+            <div className="flex gap-1 mt-1 ">
+            <PiArrowElbowDownRightLight className="mt-1" />
+            <p>Reply</p>
+            <p></p>
+            </div>
+            <div className="gap-1 flex mt-1">
+              <GrFlag className="mt-1"/>
+              <p>Flage as inappropriate</p>
+            </div>
+            </div>
+        
+          </div>
+        
           </div>
         </div>
       </div>
