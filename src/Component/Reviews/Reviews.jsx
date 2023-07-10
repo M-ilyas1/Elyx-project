@@ -45,7 +45,7 @@ function Reviews() {
     );
   };
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center  w-[1050px]">
       <div className="flex items-center justify-center w-full">
         <button
           onClick={handleLeftClick}
@@ -57,7 +57,7 @@ function Reviews() {
           {data.map((reviewData, index) => (
             <div
               key={reviewData.id}
-              className={`h-[250px] md:w-[636px] w-full bg-white text-center pl-10 pr-10 pt-[25px] rounded-lg ${
+              className={`h-[250px] w-[900px] bg-white text-center pl-10 pr-10 pt-[25px] rounded-lg ${
                 index === currentIndex ? "" : "hidden"
               }`}
             >
