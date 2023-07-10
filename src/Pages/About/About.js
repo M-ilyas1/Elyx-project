@@ -136,8 +136,8 @@ function About() {
       <section>
         <Cta />
       </section>
-      <section className="bg-[#F8F8FF] p-[50px] w-full">
-        <div className="flex flex-wrap justify-center gap-7">
+      <section className="container bg-[#F8F8FF] p-[50px]">
+        <div className="  flex flex-wrap justify-center gap-7">
           <Reviews />
         </div>
       </section>
