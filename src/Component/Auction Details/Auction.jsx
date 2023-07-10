@@ -13,11 +13,10 @@ import {
   img15a,
   img16a,
   img17a,
-  
 } from "../../images/index.js";
 import { BsClock, BsArrowUp, BsHash, BsQuestionCircle } from "react-icons/bs";
 import { RiShareForwardLine } from "react-icons/ri";
-import { GrFavorite ,GrFlag } from "react-icons/gr";
+import { GrFavorite, GrFlag } from "react-icons/gr";
 import { AiOutlineComment } from "react-icons/ai";
 import { FaRegCommentDots } from "react-icons/fa";
 import { PiArrowElbowDownRightLight } from "react-icons/pi";
@@ -89,8 +88,8 @@ function Aution() {
         </div>
       </div>
 
-      <div className="flex gap-4">
-        <div className=" w-[50%] pb-10">
+      <div className="flex gap-4 pb-5">
+        <div className=" w-[50%]  ">
           <div>
             <div className="w-full bg-cover">
               <img src={selectedImage || Autionbg} alt="" className="w-full" />
@@ -190,14 +189,14 @@ function Aution() {
             </li>
             <li className="list-outside">
               <p className="text-black">
-                {" "}
+               
                 The attached Carfax vehicle history report shows no accidents or
                 damage in this FJ Cruiser's past.
               </p>
             </li>
             <li className="list-outside ">
               <p className="text-black">
-                {" "}
+               
                 Numerous modifications have been made to this FJ and highlights
                 include Raptor exterior coating, a TRD snorkel, a custom audio
                 system, and more as detailed below.
@@ -206,17 +205,88 @@ function Aution() {
           </ul>
 
           <hr className=" h-1" />
+          <div className="pb-10">
+            <h1 className="text-[blue] font-bold text-lg">Modifications</h1>
+            <ul className="list-disc text-[blue] pl-10">
+            <li className="list-outside ">
+              <p className="text-black">
+              Raptor Liner exterior coating
+              </p>
+            </li>
+            <li className="list-outside">
+              <p className="text-black">
+               
+              Wheels painted black
+              </p>
+            </li>
+            <li className="list-outside ">
+              <p className="text-black">
+               
+              LED exterior and interior lighting
+              </p>
+            </li>
+            <li className="list-outside ">
+              <p className="text-black">
+               
+              Alpine double din head unit with Android Auto and Apple CarPlay              </p>
+            </li>
+            <li className="list-outside ">
+              <p className="text-black">
+              Bluetooth connectivity</p>
+            </li>
+            <li className="list-outside ">
+              <p className="text-black">
+              Backup camera
+              </p>
+            </li>
+            <li className="list-outside ">
+              <p className="text-black">
+              2 Alpine amplifiers
+              </p>
+            </li>
+            <li className="list-outside ">
+              <p className="text-black">
+              JL Audio Stealth Box (12-inch)
+              </p>
+            </li>
+          </ul>
+          </div>
+          <hr className=" h-1" />
+        <div className="pb-10 pt-5">
+            <h1 className="text-[blue] font-bold text-lg">Recent Service History</h1>
+            <p>The seller reports that the only service this FJ Cruiser has required during his ownership has been an A/C blower motor resistor; no service documentation is available.</p>
+            </div>
+            <hr className=" h-1" />
+
+            <div className="pt-5">
+              <h1 className="text-[blue] font-bold text-lg">Bid on this listing</h1>
+              <div className="flex gap-5 p-2">
+                <div className="bg-[#f6f6fa] w-[10%] ">
+                <p>Current Bid</p>
+                <p>Time Left</p>
+                <p>Ends On</p>
+                <p>Bids</p>
+                </div>
+                <div>
+                <p>USD $95,000 by <span className="text-[#0C50CA]"> TBCars</span> </p>
+                <p>23 : 34 : 57 : 07</p>
+                <p>	Friday, September 3 at 11:30pm</p>
+                <p>20</p>
+                </div>
+              </div>
+            </div>
         </div>
-        <div className=" w-[50%]">
+        {/* second div */}
+        <div className=" w-[50%] leading-10 pb-10  ">
           <div className="">
-            <div className=" flex bg-black  flex-wrap  text-white justify-between items-center rounded pl-2 text-sm ">
+            <div className=" flex bg-black  flex-wrap  text-white justify-between items-center rounded pl-2  text-sm ">
               <div className="flex gap-1">
                 <BsClock className="mt-1 text-[#0C50CA]" />
                 {currentTime}
               </div>
 
               <div className="flex gap-1 ">
-                <BsArrowUp className="text-[#0C50CA] mt-1" />
+                <BsArrowUp className="text-[#0C50CA] mt-1 " />
                 <h1 className="text-[#0C50CA]">High Bid</h1>
                 <h1>$7,400</h1>
               </div>
@@ -235,13 +305,13 @@ function Aution() {
               </div>
             </div>
 
-            <div className="mt-3">
-              <div className="flex   gap-[30%] border[#CCD9E0] border-l border-t border-r rounded-r-md p-5 ">
-                <div className="mt-4  w-[30%]">
+            <div className="mt-3 mb-5">
+              <div className="flex gap-[30%] border[#CCD9E0] border-l border-t border-r rounded-r-md p-5 ">
+                <div className="mt-4 pb-5  w-[30%]">
                   <p>CURRENT BID</p>
                   <h1 className="font-bold text-2xl">$9,056</h1>
                 </div>
-                <div className=" leading-7">
+                <div className=" leading-7 mt-2">
                   <div className="flex gap-1 items-center">
                     <img src={user} alt="" />
                     <pre>Bidder : Alex Jonhson</pre>
@@ -300,8 +370,8 @@ function Aution() {
             </div>
           </div>
 
-          <div>
-            <div className="flex gap-2 mt-3">
+          <div className="leading-7 ">
+            <div className="flex gap-2 mt-3 ">
               <img src={img13a} alt="" />
               <h1 className="mt-2">Mishal</h1>
               <BsArrowUp className="mt-3 text-[#0C50CA] " />
@@ -315,143 +385,197 @@ function Aution() {
             </p>
 
             <div className=" flex mt-1 ml-12 gap-10">
-            <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
-            <BsArrowUp className="mt-1"/>
-            <p>20</p>
-            </button>
+              <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+                <BsArrowUp className="mt-1" />
+                <p>20</p>
+              </button>
 
-            <div className="flex gap-1 mt-1 ">
-            <PiArrowElbowDownRightLight className="mt-1" />
-            <p>Reply</p>
-            <p></p>
+              <div className="flex gap-1 mt-1 ">
+                <PiArrowElbowDownRightLight className="mt-1" />
+                <p>Reply</p>
+                <p></p>
+              </div>
+              <div className="gap-1 flex mt-1">
+                <GrFlag className="mt-1" />
+                <p>Flage as inappropriate</p>
+              </div>
             </div>
-            <div className="gap-1 flex mt-1">
-              <GrFlag className="mt-1"/>
-              <p>Flage as inappropriate</p>
-            </div>
-            </div>
-        
-          </div>
+          
           <div>
             <div className="flex gap-2 mt-3">
               <img src={img14a} alt="" />
-              <h1 className="mt-2">Mishal</h1>
+              <h1 className="mt-2">Sandhya</h1>
               <BsArrowUp className="mt-3 text-[#0C50CA] " />
               <p className="text-[#0C50CA] mt-2">3.2k</p>
               <p className="mt-2 opacity-70">5 Hours ago</p>
             </div>
             <p className="ml-12">
-              Like the Alfa 75, this Spider was not that rare in Europe. But
-              nowadays, it is! Whatever, an absolute unicorn for any American
-              driver, that's for sure. ^^
+              Wow this is awesome. I must have watched that wheeler dealers
+              episode 10 times. As a proud owner of a red quadrifoglio myself I
+              must say it’s nice seeing these increase in value. I bought mine
+              on a competitor auction site for a lot less than the current bid
+              price. Make sure you drive it don’t just let it sit, that’s the
+              worse thing you can do. <br />
+              <br />
+               Alfa’s are a lot like Italian women, with
+              the passion you get the temperament so if you don’t give it
+              attention be prepared to deal with some problems. :-)
             </p>
 
             <div className=" flex mt-1 ml-12 gap-10">
-            <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
-            <BsArrowUp className="mt-1"/>
-            <p>20</p>
-            </button>
+              <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+                <BsArrowUp className="mt-1" />
+                <p>20</p>
+              </button>
 
-            <div className="flex gap-1 mt-1 ">
-            <PiArrowElbowDownRightLight className="mt-1" />
-            <p>Reply</p>
-            <p></p>
-            </div>
-            <div className="gap-1 flex mt-1">
-              <GrFlag className="mt-1"/>
-              <p>Flage as inappropriate</p>
-            </div>
+              <div className="flex gap-1 mt-1 ">
+                <PiArrowElbowDownRightLight className="mt-1" />
+                <p>Reply</p>
+                <p></p>
+              </div>
+              <div className="gap-1 flex mt-1">
+                <GrFlag className="mt-1" />
+                <p>Flage as inappropriate</p>
+              </div>
             </div>
             <div>
-            <div className="flex gap-2 mt-3">
-              <img src={img15a} alt="" />
-              <h1 className="mt-2">Mishal</h1>
-              <BsArrowUp className="mt-3 text-[#0C50CA] " />
-              <p className="text-[#0C50CA] mt-2">3.2k</p>
-              <p className="mt-2 opacity-70">5 Hours ago</p>
+              <div className="flex gap-2 mt-3">
+                <img src={img15a} alt="" />
+                <h1 className="mt-2">Mattteuz</h1>
+                <BsArrowUp className="mt-3 text-[#0C50CA] " />
+                <p className="text-[#0C50CA] mt-2">4</p>
+                <p className="mt-2 opacity-70">3 Day ago</p>
+              </div>
+              <div className=" flex mt-1 ml-8 gap-2">
+              <button className="bg-[#353535] text-white w-[10%] rounded-full">Bid $9,056</button>
+                <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+                  <BsArrowUp className="mt-1" />
+                  <p>20</p>
+                </button>
+              </div>
             </div>
-            <p className="ml-12">
-              Like the Alfa 75, this Spider
-            </p>
+            <div>
+              <div className="flex gap-2 mt-3">
+                <img src={img16a} alt="" />
+                <h1 className="mt-2">Markindallas</h1>
+                <BsArrowUp className="mt-3 text-[#0C50CA] " />
+                <p className="text-[#0C50CA] mt-2">4</p>
+                <p className="mt-2 opacity-70">3 Days ago</p>
+              </div>
 
-            <div className=" flex mt-1 ml-12 gap-10">
-            <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
-            <BsArrowUp className="mt-1"/>
-            <p>20</p>
-            </button>
+              <div className=" flex mt-1 ml-8 gap-2">
+              <button className="bg-[#353535] text-white w-[10%] rounded-full">Bid $8,700</button>
+                <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+                  <BsArrowUp className="mt-1" />
+                  <p>20</p>
+                </button>
+              </div>
+            </div>
 
-            <div className="flex gap-1 mt-1 ">
-            <PiArrowElbowDownRightLight className="mt-1" />
-            <p>Reply</p>
-            <p></p>
-            </div>
-            <div className="gap-1 flex mt-1">
-              <GrFlag className="mt-1"/>
-              <p>Flage as inappropriate</p>
-            </div>
-            </div>
-          </div>
-          <div>
-            <div className="flex gap-2 mt-3">
-              <img src={img16a} alt="" />
-              <h1 className="mt-2">Mishal</h1>
-              <BsArrowUp className="mt-3 text-[#0C50CA] " />
-              <p className="text-[#0C50CA] mt-2">3.2k</p>
-              <p className="mt-2 opacity-70">5 Hours ago</p>
-            </div>
-            <p className="ml-12">
+            <div>
+              <div className="flex gap-2 mt-3">
+                <img src={img17a} alt="" />
+                <h1 className="mt-2">Lavaman</h1>
+                <BsArrowUp className="mt-3 text-[#0C50CA] " />
+                <p className="text-[#0C50CA] mt-2">4</p>
+                <p className="mt-2 opacity-70">3 Day ago</p>
+              </div>
+              <p className="ml-12">Like the Alfa 75,</p>
+              <div className=" flex mt-1 ml-8 gap-2">
+              <button className="bg-[#353535] text-white w-[10%] rounded-full">Bid $8,100</button>
+                <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+                  <BsArrowUp className="mt-1" />
+                  <p>20</p>
+                </button>
+              </div>
+
               
-            </p>
+              </div>
 
-            <div className=" flex mt-1 ml-12 gap-10">
-            <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
-            <BsArrowUp className="mt-1"/>
-            <p>20</p>
-            </button>
+            <div>
+              <div className="flex gap-2 mt-3">
+                <img src={img17a} alt="" />
+                <h1 className="mt-2">LamBROGhiniz</h1>
+                <BsArrowUp className="mt-3 text-[#0C50CA] " />
+                <p className="text-[#0C50CA] mt-2">3.2k</p>
+                <p className="mt-2 opacity-70">5 hour ago</p>
+              </div>
+              <p className="ml-12">I can't wait to see what this goes for. Desirable classic + No Reserve = interesting auction.</p>
+              <div className=" flex mt-1 ml-12 gap-10">
+              <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+                <BsArrowUp className="mt-1" />
+                <p>20</p>
+              </button>
 
-            <div className="flex gap-1 mt-1 ">
-            <PiArrowElbowDownRightLight className="mt-1" />
-            <p>Reply</p>
-            <p></p>
+              <div className="flex gap-1 mt-1 ">
+                <PiArrowElbowDownRightLight className="mt-1" />
+                <p>Reply</p>
+                <p></p>
+              </div>
+              <div className="gap-1 flex mt-1">
+                <GrFlag className="mt-1" />
+                <p>Flage as inappropriate</p>
+              </div>
             </div>
-            <div className="gap-1 flex mt-1">
-              <GrFlag className="mt-1"/>
-              <p>Flage as inappropriate</p>
-            </div>
-            </div>
-          </div>
+              </div>
 
-          <div>
-            <div className="flex gap-2 mt-3">
-              <img src={img17a} alt="" />
-              <h1 className="mt-2">Mishal</h1>
-              <BsArrowUp className="mt-3 text-[#0C50CA] " />
-              <p className="text-[#0C50CA] mt-2">3.2k</p>
-              <p className="mt-2 opacity-70">5 Hours ago</p>
-            </div>
-            <p className="ml-12">
-              Like the Alfa 75,
-            </p>
+            <div className="ml-14">
+              <div className="flex gap-2 mt-3">
+                <img src={img15a} alt="" />
+                <h1 className="mt-2">LamBROGhiniz</h1>
+                <BsArrowUp className="mt-3 text-[#0C50CA] " />
+                <p className="text-[#0C50CA] mt-2">3.2k</p>
+                <button className="bg-[#EA5F00] p-1 rounded text-white">SELLER</button>
+                <p className="mt-2 opacity-70">5 hour ago</p>
+              </div>
+              <p className="ml-12">I can't wait to see what this goes for. Desirable classic + No Reserve = interesting auction.</p>
+              <div className=" flex mt-1 ml-12 gap-10">
+              <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+                <BsArrowUp className="mt-1" />
+                <p>20</p>
+              </button>
 
-            <div className=" flex mt-1 ml-12 gap-10">
-            <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
-            <BsArrowUp className="mt-1"/>
-            <p>20</p>
-            </button>
+              <div className="flex gap-1 mt-1 ">
+                <PiArrowElbowDownRightLight className="mt-1" />
+                <p>Reply</p>
+                <p></p>
+              </div>
+              <div className="gap-1 flex mt-1">
+                <GrFlag className="mt-1" />
+                <p>Flage as inappropriate</p>
+              </div>
+            </div>
+              </div>
+              <div className="ml-28">
+                <div className="flex gap-2 mt-3">
+                  <img src={img13a} alt="" />
+                  <h1 className="mt-2">LamBROGhiniz</h1>
+                  <BsArrowUp className="mt-3 text-[#0C50CA] " />
+                  <p className="text-[#0C50CA] mt-2">3.2k</p>
+                  <p className="mt-2 opacity-70">5 hour ago</p>
+                </div>
+                <p className="ml-12">I can't wait to see what this goes for. Desirable classic + No Reserve = interesting auction.</p>
+                <div className=" flex mt-1 ml-12 gap-10">
+                <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
+                  <BsArrowUp className="mt-1" />
+                  <p>20</p>
+                </button>
 
-            <div className="flex gap-1 mt-1 ">
-            <PiArrowElbowDownRightLight className="mt-1" />
-            <p>Reply</p>
-            <p></p>
+                <div className="flex gap-1 mt-1 ">
+                  <PiArrowElbowDownRightLight className="mt-1" />
+                  <p>Reply</p>
+                  <p></p>
+                </div>
+                <div className="gap-1 flex mt-1">
+                  <GrFlag className="mt-1" />
+                  <p>Flage as inappropriate</p>
+                </div>
+              </div>
+              <button className="bg-blue-700 p-3 mt-7 ml-12 text-white rounded-md ">
+                Post A Comments
+              </button>
+                </div>
             </div>
-            <div className="gap-1 flex mt-1">
-              <GrFlag className="mt-1"/>
-              <p>Flage as inappropriate</p>
-            </div>
-            </div>
-        
-          </div>
-        
           </div>
         </div>
       </div>
