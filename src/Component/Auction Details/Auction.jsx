@@ -75,7 +75,7 @@ function Aution() {
           </div>
         </div>
 
-        <div className="flex  ">
+        <div className="flex mt-3 mb-8  ">
           <button className="bg-orange-600 p-3 text-white font-bold rounded-[10px]">
             NO RESERVE
           </button>

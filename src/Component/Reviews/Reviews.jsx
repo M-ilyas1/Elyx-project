@@ -57,7 +57,7 @@ function Reviews() {
           {data.map((reviewData, index) => (
             <div
               key={reviewData.id}
-              className={`h-[250px] md:w-[636px] w-full bg-white text-center pl-10 pr-10 pt-[25px] rounded-lg ${
+              className={`h-[250px]  2xl:w-[1060px]  xl:w-[780px] lg:w-[600px] md:w-[480px] sm:w-[200px] bg-white text-center pl-10 pr-10 pt-[25px] rounded-lg ${
                 index === currentIndex ? "" : "hidden"
               }`}
             >
