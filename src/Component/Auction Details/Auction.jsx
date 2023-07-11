@@ -61,7 +61,7 @@ function Aution() {
   return (
     <div className="mt-10 gap-3">
       <div>
-        <div className="flex justify-between ">
+        <div className="flex  justify-between ">
           <h1 className="text-2xl font-bold">2007 Toyota FJ Cruiser</h1>
           <div className="flex  text-3xl gap-10 ">
             <h1 className="flex gap-5">
@@ -88,47 +88,47 @@ function Aution() {
         </div>
       </div>
 
-      <div className="flex gap-4 pb-5">
-        <div className=" w-[50%]  ">
+      <div className="grid gap-4 2xl:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 bg-blue-600 pb-10">
+        <div className=" w-[98%] bg-red-500  ">
           <div>
             <div className="w-full bg-cover">
               <img src={selectedImage || Autionbg} alt="" className="w-full" />
             </div>
-            <div className="flex mt-2 gap-2 bg-cover  ">
+            <div className="grid grid-cols-5 mt-2 gap-2 bg-cover  ">
               <img
                 src={Aution1}
                 alt=""
-                className="w-[20%]"
+                // className="w-[20%]"
                 onClick={() => openCard(1)}
               />
               <img
                 src={Aution2}
                 alt=""
-                className="w-[20%]"
+                // className="w-[20%]"
                 onClick={() => openCard(2)}
               />
               <img
                 src={Aution3}
                 alt=""
-                className="w-[20%]"
+                // className="w-[20%]"
                 onClick={() => openCard(3)}
               />
               <img
                 src={Aution4}
                 alt=""
-                className="w-[20%]"
+                // className="w-[20%]"
                 onClick={() => openCard(4)}
               />
               <img
                 src={Aution5}
                 alt=""
-                className="w-[20%]"
+                // className="w-[20%]"
                 onClick={() => openCard(5)}
               />
             </div>
           </div>
 
-          <div className="flex gap-16 leading-10">
+          <div className=" grid grid-cols-4 leading-10">
             <div className="bg-[#F8F8FF] ">
               <h1>Make</h1>
               <h1>Model</h1>
@@ -277,9 +277,9 @@ function Aution() {
             </div>
         </div>
         {/* second div */}
-        <div className=" w-[50%] leading-10 pb-10  ">
+        <div className="w-[99%] pb-10 bg-green-600  ">
           <div className="">
-            <div className=" flex bg-black  flex-wrap  text-white justify-between items-center rounded pl-2  text-sm ">
+            <div className=" flex bg-black  text-white justify-between items-center rounded pl-2  text-sm ">
               <div className="flex gap-1">
                 <BsClock className="mt-1 text-[#0C50CA]" />
                 {currentTime}
@@ -311,7 +311,7 @@ function Aution() {
                   <p>CURRENT BID</p>
                   <h1 className="font-bold text-2xl">$9,056</h1>
                 </div>
-                <div className=" leading-7 mt-2">
+                <div className=" leading-7 mt-2 flex flex-wrap">
                   <div className="flex gap-1 items-center">
                     <img src={user} alt="" />
                     <pre>Bidder : Alex Jonhson</pre>
@@ -323,6 +323,7 @@ function Aution() {
                       <span className="text-[blue] underline">contact</span>
                     </pre>
                   </div>
+
                   <div className="flex gap-1 items-center">
                     <img src={hammer} alt="" />
                     <pre>Bidder : Alex Jonhson</pre>
@@ -330,7 +331,7 @@ function Aution() {
                 </div>
               </div>
               <div className="bg-[#F8F8FF]">
-                <div className="flex p-4 gap-[29%] text-2xl ">
+                <div className="flex p-4 gap-[15%] text-2xl ">
                   <div className="flex ml-1 gap-1 ">
                     <BsQuestionCircle className="mt-1" />
                     <p>How to place a bid?</p>
@@ -447,7 +448,7 @@ function Aution() {
                 <p className="mt-2 opacity-70">3 Day ago</p>
               </div>
               <div className=" flex mt-1 ml-8 gap-2">
-              <button className="bg-[#353535] text-white w-[10%] rounded-full">Bid $9,056</button>
+              <button className="bg-[#353535] text-white w-[15%] rounded-full">Bid $9,056</button>
                 <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
                   <BsArrowUp className="mt-1" />
                   <p>20</p>
@@ -464,7 +465,7 @@ function Aution() {
               </div>
 
               <div className=" flex mt-1 ml-8 gap-2">
-              <button className="bg-[#353535] text-white w-[10%] rounded-full">Bid $8,700</button>
+              <button className="bg-[#353535] text-white w-[15%] rounded-full">Bid $8,700</button>
                 <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
                   <BsArrowUp className="mt-1" />
                   <p>20</p>
@@ -482,7 +483,7 @@ function Aution() {
               </div>
               <p className="ml-12">Like the Alfa 75,</p>
               <div className=" flex mt-1 ml-8 gap-2">
-              <button className="bg-[#353535] text-white w-[10%] rounded-full">Bid $8,100</button>
+              <button className="bg-[#353535] text-white w-[15%] rounded-full">Bid $8,100</button>
                 <button className="flex text-[#0C50CA] w-16 justify-center rounded-full border border-[#0C50CA] p-1">
                   <BsArrowUp className="mt-1" />
                   <p>20</p>
@@ -579,6 +580,7 @@ function Aution() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }
