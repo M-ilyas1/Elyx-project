@@ -25,108 +25,109 @@ import Cta from "../../Component/Cta/Cta";
 import PopularItems from "../../Component/PopularItems/PopularItems";
 import Example from "../../Component/footer/footer";
 import HeroSection from "../../Component/HeroSection/HeroSection";
+const AuctionData8 = [
+  {
+    price: "$300000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "1990",
+    engine: "1WD",
+    location: "California,USA",
+    image: car1,
+  },
+  {
+    price: "$200000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "2990",
+    engine: "2WD",
+    location: "California,USA",
+    image: car2,
+  },
+  {
+    price: "$300000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "3990",
+    engine: "3WD",
+    location: "Californsia,USA",
+    image: car3,
+  },
+  {
+    price: "$400000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "4990",
+    engine: "4WD",
+    location: "California,USA",
+    image: car4,
+  },
+  {
+    price: "$5000000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "5990",
+    engine: "5WD",
+    location: "California,USA",
+    image: car5,
+  },
+  {
+    price: "$6000000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "6990",
+    engine: "6WD",
+    location: "California,USA",
+    image: car6,
+  },
+  {
+    price: "$7000000",
+    name: "mitsubishii delica star wagoon exceed",
+    model: "7990",
+    engine: "7WD",
+    location: "California,USA",
+    image: car7,
+  },
+  {
+    price: "$800000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "8990",
+    engine: "8WD",
+    location: "California,USA",
+    image: car8,
+  },
+];
+const AuctionData4 = [
+  {
+    price: "$300000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "1990",
+    engine: "1WD",
+    location: "California,USA",
+    image: car6,
+  },
+  {
+    price: "$200000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "2990",
+    engine: "2WD",
+    location: "California,USA",
+    image: car7,
+  },
+  {
+    price: "$300000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "3990",
+    engine: "3WD",
+    location: "Californsia,USA",
+    image: car8,
+  },
+  {
+    price: "$400000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "4990",
+    engine: "4WD",
+    location: "California,USA",
+    image: car2,
+  },
+];
 
 export default function Home() {
-  const AuctionData8 = [
-    {
-      price: "$300000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "1990",
-      engine: "1WD",
-      location: "California,USA",
-      image: car1,
-    },
-    {
-      price: "$200000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "2990",
-      engine: "2WD",
-      location: "California,USA",
-      image: car2,
-    },
-    {
-      price: "$300000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "3990",
-      engine: "3WD",
-      location: "Californsia,USA",
-      image: car3,
-    },
-    {
-      price: "$400000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "4990",
-      engine: "4WD",
-      location: "California,USA",
-      image: car4,
-    },
-    {
-      price: "$5000000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "5990",
-      engine: "5WD",
-      location: "California,USA",
-      image: car5,
-    },
-    {
-      price: "$6000000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "6990",
-      engine: "6WD",
-      location: "California,USA",
-      image: car6,
-    },
-    {
-      price: "$7000000",
-      name: "mitsubishii delica star wagoon exceed",
-      model: "7990",
-      engine: "7WD",
-      location: "California,USA",
-      image: car7,
-    },
-    {
-      price: "$800000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "8990",
-      engine: "8WD",
-      location: "California,USA",
-      image: car8,
-    },
-  ];
-  const AuctionData4 = [
-    {
-      price: "$300000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "1990",
-      engine: "1WD",
-      location: "California,USA",
-      image: car6,
-    },
-    {
-      price: "$200000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "2990",
-      engine: "2WD",
-      location: "California,USA",
-      image: car7,
-    },
-    {
-      price: "$300000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "3990",
-      engine: "3WD",
-      location: "Californsia,USA",
-      image: car8,
-    },
-    {
-      price: "$400000",
-      name: "mitsubishi delica star wagon exceed",
-      model: "4990",
-      engine: "4WD",
-      location: "California,USA",
-      image: car2,
-    },
-  ];
+ 
   return (
     <div className="container m-auto">
       <section>

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home.js";
 import About from "./Pages/About/About.js";
 import NavBar from "./Component/Header/Header.jsx";
@@ -9,7 +9,6 @@ import GetinEmail from "./Pages/GetinEmail/GetinEmail.js";
 function App() {  
   return (
     <>
-
     <NavBar/>
     <Routes>
           <Route index element={<Home />} />
