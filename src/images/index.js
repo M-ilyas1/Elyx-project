@@ -33,5 +33,4 @@ import img16a from  "../images/img (3).png";
 import img17a from  "../images/img (4).png";
 
 
-
 export {img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,car1,car2,car3,car4,car5,car6,car7,car8,Autionbg,Aution1,Aution2,Aution3,Aution4,Aution5,user,hammer, img13a ,img14a, img15a, img16a,img17a}

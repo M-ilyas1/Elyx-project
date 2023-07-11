@@ -4,13 +4,11 @@ import Img from "../../images/IMG-M.png";
 import { MdWatchLater } from "react-icons/md";
 
 export default function HeroBanner1() {
-  const [currentTime, setCurrentTime] = useState(
-    new Date().toLocaleTimeString()
-  );
+  const [currentTime, setCurrentTime] = useState();
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTime(new Date().toLocaleTimeString());
-    }, 1000);
+    },1000);
     return () => {
       clearInterval(interval);
     };

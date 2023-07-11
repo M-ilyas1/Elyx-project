@@ -3,7 +3,7 @@ import Aution from '../../Component/Auction Details/Auction'
 
 export default function HowitWorks() {
   return (
-    <div>
+    <div className='container'>
       <Aution/>
     </div>
 
