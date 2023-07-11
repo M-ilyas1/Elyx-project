@@ -14,6 +14,9 @@ module.exports = {
       },
     },
     extend: {
+      colors:{
+        primary : "#0C50CA"
+      },
       screens: {
         'xs' : {'min':'325px','max':'640px'},
         // => @media (min 325px and max 640px)
