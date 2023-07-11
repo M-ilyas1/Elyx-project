@@ -19,7 +19,7 @@ function AboutContent() {
           <p className='text-[20px] pt-5'>
           Bring a Trailer co-founder Randy Nonnenberg has been hunting through classifieds for rare, interesting, and just plain cool cars since before he could even drive them. In 2007, after years of recommending listings to his buddies.
           <br/><br/>
-          Bring a Trailer co-founder Randy Nonnenberg has been hunting through classifieds for rare, interesting, and just plain cool cars since before he could even drive them. In 2007, after years of recommending listings to his buddies, friend and co-founder Gentry Underwood urged Randy to share.
+          Bring a Trailer co-founder Randy Nonnenberg has the and They after return been hunting through classifieds for rare, interesting, and just plain cool cars since before he could even drive them. In 2007, after years of recommending listings to his buddies, friend and co-founder Gentry Underwood urged Randy to share.
           </p>
         </div>
     </div>
