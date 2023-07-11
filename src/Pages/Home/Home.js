@@ -216,7 +216,7 @@ export default function Home() {
         <PopularItems />
       </section>
       <section>
-        <div>
+        <div className="">
           <Example />
         </div>
       </section>
