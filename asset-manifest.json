@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Elyx-project/homepage/static/css/main.447e372f.css",
-    "main.js": "/Elyx-project/homepage/static/js/main.8c7587a7.js",
+    "main.css": "/Elyx-project/homepage/static/css/main.8f735bb2.css",
+    "main.js": "/Elyx-project/homepage/static/js/main.53e15d17.js",
     "static/js/787.633816a4.chunk.js": "/Elyx-project/homepage/static/js/787.633816a4.chunk.js",
     "static/media/Aution detailsi B.png": "/Elyx-project/homepage/static/media/Aution detailsi B.f9663617f84842b34b37.png",
     "static/media/About.png": "/Elyx-project/homepage/static/media/About.3c5dd2b480fce27b0447.png",
@@ -36,12 +36,12 @@
     "static/media/Aution detailsi 4.png": "/Elyx-project/homepage/static/media/Aution detailsi 4.e6200e3efc9f6ce8e387.png",
     "static/media/Aution detailsi 3.png": "/Elyx-project/homepage/static/media/Aution detailsi 3.184564e1134f88e97285.png",
     "index.html": "/Elyx-project/homepage/index.html",
-    "main.447e372f.css.map": "/Elyx-project/homepage/static/css/main.447e372f.css.map",
-    "main.8c7587a7.js.map": "/Elyx-project/homepage/static/js/main.8c7587a7.js.map",
+    "main.8f735bb2.css.map": "/Elyx-project/homepage/static/css/main.8f735bb2.css.map",
+    "main.53e15d17.js.map": "/Elyx-project/homepage/static/js/main.53e15d17.js.map",
     "787.633816a4.chunk.js.map": "/Elyx-project/homepage/static/js/787.633816a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.447e372f.css",
-    "static/js/main.8c7587a7.js"
+    "static/css/main.8f735bb2.css",
+    "static/js/main.53e15d17.js"
   ]
 }
