@@ -88,8 +88,8 @@ function Aution() {
         </div>
       </div>
 
-      <div className="grid gap-4 2xl:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 bg-blue-600 pb-10">
-        <div className=" w-[98%] bg-red-500  ">
+      <div className="grid gap-4 2xl:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1s pb-10">
+        <div className=" w-[98%]  ">
           <div>
             <div className="w-full bg-cover">
               <img src={selectedImage || Autionbg} alt="" className="w-full" />
@@ -277,7 +277,7 @@ function Aution() {
             </div>
         </div>
         {/* second div */}
-        <div className="w-[99%] pb-10 bg-green-600  ">
+        <div className="w-[99%] pb-10  ">
           <div className="">
             <div className=" flex bg-black  text-white justify-between items-center rounded pl-2  text-sm ">
               <div className="flex gap-1">
