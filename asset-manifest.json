@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Elyx-project/static/css/main.8f735bb2.css",
+    "main.css": "/Elyx-project/static/css/main.b7dfddc9.css",
     "main.js": "/Elyx-project/static/js/main.36c838be.js",
     "static/js/787.633816a4.chunk.js": "/Elyx-project/static/js/787.633816a4.chunk.js",
     "static/media/Aution detailsi B.png": "/Elyx-project/static/media/Aution detailsi B.f9663617f84842b34b37.png",
@@ -36,12 +36,12 @@
     "static/media/Aution detailsi 4.png": "/Elyx-project/static/media/Aution detailsi 4.e6200e3efc9f6ce8e387.png",
     "static/media/Aution detailsi 3.png": "/Elyx-project/static/media/Aution detailsi 3.184564e1134f88e97285.png",
     "index.html": "/Elyx-project/index.html",
-    "main.8f735bb2.css.map": "/Elyx-project/static/css/main.8f735bb2.css.map",
+    "main.b7dfddc9.css.map": "/Elyx-project/static/css/main.b7dfddc9.css.map",
     "main.36c838be.js.map": "/Elyx-project/static/js/main.36c838be.js.map",
     "787.633816a4.chunk.js.map": "/Elyx-project/static/js/787.633816a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f735bb2.css",
+    "static/css/main.b7dfddc9.css",
     "static/js/main.36c838be.js"
   ]
 }
