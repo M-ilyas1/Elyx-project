@@ -9,7 +9,7 @@ export default function HeroBanner2() {
         <p className='text-[18px] font-normal pl-32 pt-5 leading-4'>You order your car completely online.</p>
     </div>
     <div className='w-[50%] h-[320px]'>
-        <img src={MainImg} />
+        <img alt='MainImage.....' src={MainImg} />
     </div>
     </div>
     
