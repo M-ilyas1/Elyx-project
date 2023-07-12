@@ -1,29 +1,32 @@
 import { useState } from "react";
 import logo from "../../images/Logo.png";
-import { Links } from "./Links";
 import Button from "../Button/Button";
+// import { Outlet, Link } from "react-router-dom";
+import { Links } from "./Links";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const link = [
-    "Home",
-    "About",
-    "Submit For Auction",
-    "How it Works",
-    "Get in Email",
+    {name:"Home",link:"/"},
+    {name:"About",link:"/about"},
+    {name:"Submit For Auction",link:"/SubmitForAuction"},
+    {name:"How it Works",link:"/HowitWorks"},
+    {name:"Get in Email",link:"/GetinEmail"},
   ];
-
   return (
-    <nav className="w-full shadow">
-      <div className="justify-between items-center flex-wrap px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+    <nav className="container">
+      <div className="justify-between items-center flex-wrap px-4 mx-auto  Nav:items-center Nav:flex Nav:px-8">
         <div>
-          <div className="flex flex-wrap items-center justify-between py-3 md:py-5 md:full">
-            <a href="javascript">
-              <img src={logo} alt="...." className="w-[177.5px] j-[60px]" />
-            </a>
-            <div className="md:hidden">
+          <div className="flex flex-wrap items-center justify-between py-3 Nav:py-5 Nav:full">
+      
+              <img
+                src={logo}
+                alt="...."
+                className="w-[177.5px] j-[60px]"
+              />
+            <div className="Nav:hidden ">
               <button
-                className="p-2 text-white bg-blue-700 rounded-md outline-none focus:border-white focus:border"
+                className="p-2 text-white bg-blue-700 rounded-md outline-none focus:border-white focus:border mr-3"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -59,17 +62,17 @@ export default function NavBar() {
             </div>
           </div>
         </div>
-        <div className="flex flex-nowrap justify-between items-center">
+        <div className="justify-between items-center">
           <div
             className={`${
               navbar ? "block" : "hidden"
-            } md:flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0`}
+            } md:flex-1 justify-self-center pb-3 mt-8 Nav:block Nav:pb-0 Nav:mt-0`}
           >
-            <ul className="items-center flex-nowrap justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              {link.map((item) => (
-                <Links title={item} className={"block"} key={item} />
+            <ul className="items-center justify-center space-y-8 Nav:flex Nav:space-x-6 Nav:space-y-0">
+              {link.map((item,index) => (
+                <Links link={item.link} title={item.name} className={"block"} key={index} />
               ))}
-            <Button
+              <Button
               label="Login / Signup"
               height={"h-[60px]"}
               width={"w-[196px]"}

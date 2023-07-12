@@ -1,33 +1,25 @@
-
-import React from 'react';
-import image from '../../images/car.jpg';
-
-function Product() {
-const sectionStyle = {
-backgroundImage: `url(${image})`,
-backgroundSize: 'cover',
-backgroundPosition: 'center',
-backgroundRepeat: 'no-repeat',
-width: '100%',
-height: '392px',
-borderRadius: '50px',
-};
-
-return (
-<section className="bg-gray-200 flex items-center justify-center py-20">
-<div style={sectionStyle} className="max-w-1920 mx-auto pt-12 px-12 md:px-24 lg:px-48">
-<h1 className="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight mb-6">
-Simply Buy Your Favorite Product Online
-</h1>
-<p className="text-lg md:text-xl font-normal text-gray-900 mb-6">
-You Can Order Your Car Completely Online.
-</p>
-<button className="mt-6 py-3 px-6 text-white font-semibold bg-blue-500 rounded hover:bg-blue-600">
-PLACE BID
-</button>
-</div>
-</section>
-);
-}
-
-export default Product;
+// import React from "react";
+// const Products = ({ price, name, model, engine, location, image }) => {
+//   return (
+//     <div className="main">
+//       <div className="image relative">
+//         <img className="w-[100%] h-[10%]" src={image} alt={name} />
+//         <div className="bg-blue-700 price absolute bottom-3 left-3 rounded">
+//           <h1 className="py-2 px-2 ml-1 font-bold line-height-18px text-white font-size-22px leading-5">
+//             <span className="pr-2">BID</span>
+//             {price}
+//           </h1>
+//         </div>
+//       </div>
+//       <div className="content">
+//         <h1 className="font-semibold font-size-18px ml-1 pt-5 capitalize text-lg tracking-wider pl-5">
+//           {model} {name} {engine}
+//         </h1>
+//         <p className="capitalize font-normal font-size-14px text-sm ml-6 mt-1">
+//           {location}
+//         </p>
+//       </div>
+//     </div>
+//   );
+// };
+// export default Products;

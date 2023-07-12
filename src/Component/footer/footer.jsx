@@ -107,7 +107,7 @@ const navigation = {
   ],
 };
 
-export default function Example() {
+function Example() {
   return (
     <footer className="bg-[#353535]" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -211,3 +211,4 @@ export default function Example() {
     </footer>
   );
 }
+export default Example;

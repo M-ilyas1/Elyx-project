@@ -1,10 +1,9 @@
 import React from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-
 const data = [
   {
     id: 1,
-    name: "Muhammad Ilyas",
+    name: "Anne Johnson",
     avatar: "https://ca.slack-edge.com/T01TCUZ0490-U050LNWQ9B8-d728b6789b23-512",
     rating: 3,
     review: "Kinda normal app review",
@@ -23,32 +22,28 @@ const data = [
     rating: 2,
     review: "This app really sucks",
   },
-
    {
     id: 4,
     name: "Muhammad Saqlain",
-    avatar: "https://ca.slack-edge.com/T01TCUZ0490-U050LNWMWH4-f889aee8bdb9-72",
+    avatar: "https://avatars.githubusercontent.com/u/104670161?v=4",
     rating: 4,
     review: "This app really Amizing",
   }
 ];
-
 function ReviewCard() {
   return (
     <>
       {data.map((reviewData) => {
         const starRating = [];
         const fullStars = Math.floor(reviewData.rating);
-
-        // the full stars 
+        // the full stars
         for (let i = 0; i < fullStars; i++) {
           starRating.push(
           <AiFillStar
            key={i}
             style={{ color: "#0C50CA" }} />);
         }
-
-        // Add empty 
+        // Add empty
         while (starRating.length < 5) {
           starRating.push(
             <AiOutlineStar
@@ -57,12 +52,10 @@ function ReviewCard() {
             />
           );
         }
-
         return (
           <div
             key={reviewData.id}
-            className="h-[350px] w-[336px] bg-white text-center pl-10 pr-10 pt-[55px] rounded-lg "
-           
+            className="h-[350px] w-[326px] bg-white text-center pl-10 pr-10 pt-[55px] rounded-lg "
           >
             <img
               src={reviewData.avatar}
@@ -75,7 +68,6 @@ function ReviewCard() {
             <p className="text-[16px] text-[#37474F] font-normal mt-[3px]">
               {reviewData.review}
             </p>
-
             <div className="flex justify-center items-center text-center text-[30px] mt-[18px]">
               {starRating}
             </div>
@@ -85,5 +77,4 @@ function ReviewCard() {
     </>
   );
 }
-
 export default ReviewCard;
