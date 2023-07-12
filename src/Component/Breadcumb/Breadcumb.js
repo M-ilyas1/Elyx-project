@@ -10,7 +10,7 @@ function Breadcumb() {
             <option>Action Listing</option>
             <option>Action Details</option>
         </select>
-        <a href='#' className='hover:text-blue-600 pl-10'>About</a>
+        <button className='hover:text-blue-600 pl-10'>About</button>
     </div>
     </div>
   )

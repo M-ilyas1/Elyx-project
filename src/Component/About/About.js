@@ -1,20 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Button from "../Button/Button";
 import Img from "../../images/About.png";
-import { MdWatchLater } from "react-icons/md";
 
 export default function HeroBanner1() {
-  const [currentTime, setCurrentTime] = useState(
-    new Date().toLocaleTimeString()
-  );
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTime(new Date().toLocaleTimeString());
-    }, 1000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
 
   return (
     <div>
