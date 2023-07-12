@@ -18,7 +18,7 @@ module.exports = {
         primary : "#0C50CA"
       },
       screens: {
-        'xs' : {'min':'325px','max':'640px'},
+        'xs' : "325px",
         // => @media (min 325px and max 640px)
         'Nav': '1530px',
         // => @media (min-width: 1355px) { ... }
