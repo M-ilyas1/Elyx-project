@@ -149,21 +149,21 @@ export default function Home() {
             Lattest Auctions
           </h1>
           <div className="tab flex gap-10">
-           <a href="#">
+           <button>
               <h2 className="transition-all duration-200 hover:border-b-2 hover:border-[#0C50CA] pb-4 hover:text-[#0C50CA] font-medium">
                 ACTIVE
               </h2>
-            </a>
-            <a href="#">
+            </button>
+            <button>
               <h2 className="transition-all duration-200 hover:border-b-2 hover:border-[#0C50CA] pb-4 hover:text-[#0C50CA] font-medium">
                 COMMING SOON
               </h2>
-            </a>
-            <a href="#">
+            </button>
+            <button>
               <h2 className="transition-all duration-200 hover:border-b-2 hover:border-[#0C50CA] pb-4 hover:text-[#0C50CA] font-medium">
                 COMPLETED
               </h2>
-            </a>
+            </button>
           </div>
           </div>
          
