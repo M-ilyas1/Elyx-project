@@ -1,7 +1,11 @@
 import React from 'react'
+import PlanMain from '../../Component/Plan/PlanMain'
 
 export default function SubmitForAuction() {
   return (
-    <div>SubmitForAuction</div>
+    <div>
+      <PlanMain/>
+    </div>
+
   )
 }
