@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
-import { Link,} from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 function Breadcumb() {
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState('');
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleItemClick = (name) => {
+    setSelectedItem(name);
   };
 
   return (
@@ -24,7 +28,10 @@ function Breadcumb() {
               <li>
                 <Link
                   to='/'
-                  className='block px-4 py-2 text-gray-800 hover:bg-gray-200'
+                  className={`block px-4 py-2 text-gray-800 hover:bg-gray-200 ${
+                    selectedItem === 'Homepage-v1' ? 'bg-gray-200' : ''
+                  }`}
+                  onClick={() => handleItemClick('Homepage-v1')}
                 >
                   Homepage-v1
                 </Link>
@@ -32,7 +39,10 @@ function Breadcumb() {
               <li>
                 <Link
                   to='/HomePageV2'
-                  className='block px-4 py-2 text-gray-800 hover:bg-gray-200'
+                  className={`block px-4 py-2 text-gray-800 hover:bg-gray-200 ${
+                    selectedItem === 'Homepage-v2' ? 'bg-gray-200' : ''
+                  }`}
+                  onClick={() => handleItemClick('Homepage-v2')}
                 >
                   Homepage-v2
                 </Link>
@@ -40,7 +50,10 @@ function Breadcumb() {
               <li>
                 <Link
                   to='/ActionListing'
-                  className='block px-4 py-2 text-gray-800 hover:bg-gray-200'
+                  className={`block px-4 py-2 text-gray-800 hover:bg-gray-200 ${
+                    selectedItem === 'Action Listing' ? 'bg-gray-200' : ''
+                  }`}
+                  onClick={() => handleItemClick('Action Listing')}
                 >
                   Action Listing
                 </Link>
@@ -48,16 +61,23 @@ function Breadcumb() {
               <li>
                 <Link
                   to='/ActionDetails'
-                  className='block px-4 py-2 text-gray-800 hover:bg-gray-200'
+                  className={`block px-4 py-2 text-gray-800 hover:bg-gray-200 ${
+                    selectedItem === 'Action Details' ? 'bg-gray-200' : ''
+                  }`}
+                  onClick={() => handleItemClick('Action Details')}
                 >
                   Action Details
                 </Link>
               </li>
             </ul>
           )}
-          <Link to='/about' className='hover:text-blue-600 pl-10'>
-            About
-          </Link>
+          {selectedItem ? (
+            <button className='hover:text-blue-600 pl-10'>{selectedItem}</button>
+          ) : (
+            <Link to='/about' className='hover:text-blue-600 pl-10'>
+              About
+            </Link>
+          )}
         </div>
       </div>
     </div>

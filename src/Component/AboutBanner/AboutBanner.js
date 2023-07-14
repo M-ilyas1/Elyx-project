@@ -6,8 +6,8 @@ export default function HeroBanner1() {
 
   return (
     <div>
-      <div className="w-[100%] flex">
-        <div className="w-[55%] flex flex-wrap justify-end items-center bg-white">
+      <div className="w-[100%] grid grid-cols-1 sm:grid-cols-2 ">
+        <div className="flex flex-wrap justify-center lg:justify-end items-center">
           <div className="w-[80%] bg-white">
             <h1 className="text-[48px] font-bold">
               About <span className="text-blue-600">ElyX’s</span>
@@ -27,7 +27,7 @@ export default function HeroBanner1() {
         </div>
         <div
           style={{ backgroundImage: `url(${Img})` }}
-          className="w-[45%] h-[80vh] bg-cover"
+          className="h-[80vh] bg-cover"
         ></div>
       </div>
     </div>
