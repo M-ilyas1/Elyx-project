@@ -8,14 +8,7 @@ import {
   car6,
   car7,
   car8,
-  // img1,
-  // img2,
-  // img3,
-  // img4,
-  // img5,
-  // img6,
-  // img7,
-  // img8,
+
 } from "../../images/index";
 import { FilterSection } from "../../Component";
 import Cardimg from "../../Component/Cardimg/Cardimg";
