@@ -46,6 +46,9 @@ function Reviews() {
   };
   return (
     <div className="flex flex-col items-center">
+    <div className="text-[40px] font-bold text-center pb-10">
+      <h1>Client Testimonials</h1>
+    </div>
       <div className="flex items-center justify-center w-full">
         <button
           onClick={handleLeftClick}
