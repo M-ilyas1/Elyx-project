@@ -9,9 +9,9 @@ function HowItsWorkContent() {
        
     <div className='w-[368px] text-[22px] font-mediam leading-[60px]'>
         <p><a href="" className='hover:text-[blue]'>HOW IT WORKS</a></p>
-        <p><a href="" className='hover:text-[blue]'>Buying a Prodect</a></p>
-        <p><a href="" className='hover:text-[blue]'>Seling a Prodect</a></p>
-        <p><a href="" className='hover:text-[blue]'>Finalizing the Sale</a></p>
+        <p><a href="#Buying" className='hover:text-[blue]'>Buying a Prodect</a></p>
+        <p><a href="#Selling" className='hover:text-[blue]'>Selling a Prodect</a></p>
+        <p><a href="#Finalizing" className='hover:text-[blue]'>Finalizing the Sale</a></p>
          
     </div>
       </div>
@@ -21,9 +21,9 @@ function HowItsWorkContent() {
         <div className="w-[1072px] pb-10 ">
           <h1 className="text-7xl font-bold pb-5 ">How It Works</h1>
 
-          <div className="flex gap-2 text-5xl text-Asif">
+          <div id="Buying" className="flex gap-2 text-5xl text-Asif">
             <RiLoginCircleLine className="mt-1" />
-            <h1 className="font-bold pb-5">Buying a products</h1>
+            <h1 className="font-bold pb-5 text-primary">Buying a products</h1>
           </div>
           <p className="text-[#9A9A9A] text-lg  ">
             Once you’ve found a Products you’re interested in, here are the
@@ -138,9 +138,9 @@ function HowItsWorkContent() {
         </div>
         {/* section 2 */}
         <div className="w-[1072px] ">
-          <div className="flex gap-2 text-5xl text-Asif">
+          <div id="Selling" className="flex gap-2 text-5xl text-Asif">
             <RiLoginCircleLine className="mt-1" />
-            <h1 className="font-bold pb-5">selling a products</h1>
+            <h1 className="font-bold pb-5 text-primary">selling a products</h1>
           </div>
           <p className="text-[#9A9A9A] text-lg  ">
             ElyX is the best place to sell your modern enthusiast car – and
@@ -292,10 +292,10 @@ function HowItsWorkContent() {
             </p>
           </div>
         </div>
-        <div className="w-[1072px]  pt-10">
+        <div id="Finalizing" className="w-[1072px]  pt-10">
           <div className="flex gap-2 text-5xl text-[blue]">
             <RiLoginCircleLine className="mt-1" />
-            <h1 className="font-bold pb-5">Finalizing the Sale</h1>
+            <h1 className="font-bold pb-5 text-primary">Finalizing the Sale</h1>
           </div>
           <p className="text-[#9A9A9A] text-lg  ">
           Once a car is sold on Cars & Bids, we connect the buyer and seller so they can complete the vehicle sale directly. Here are our recommendations and tips for ensuring a successful post-auction transaction – and remember, we’re here to help!
