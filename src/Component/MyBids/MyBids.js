@@ -50,13 +50,6 @@ const [currentTime]=useState(new Date().toLocaleDateString())
             model:1990,
             name:"Mitsubishi Delica Star Wagon",
             engine:"Exceed 4WD"
-        },
-        {
-            id:8,
-            image:img4,
-            model:1990,
-            name:"Mitsubishi Delica Star Wagon",
-            engine:"Exceed 5WD"
         }
         
     ]
@@ -64,10 +57,10 @@ const [currentTime]=useState(new Date().toLocaleDateString())
     <>
     <div className="main w-[1072px] h-[108px]">
         {bids.map((p)=>(
-            <div className="bid1 flex justify-between items-center border mb-2" key={p.id}>
+            <div className="bid1 flex justify-between items-center border mb-2 font-bold" key={p.id}>
                 <div className="forf flex items-center">
                 <div className="img w-[152px] h-[108px]"><img src={p.image}/></div>
-                <div className="content">
+                <div className="content text-[18px]">
                     <h2 className='pl-5 mb-2'>{p.model} {p.name} {p.engine}</h2>
                     <p className='pl-5'>ON {currentTime}</p>
                 </div>
