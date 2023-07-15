@@ -185,12 +185,7 @@ function HomePageV2() {
           <Reviews />
         </div>
       </section>
-      <section>
-      <PopularItems/>
-      </section>
-
-
-            {/* feature bid */}
+        {/* feature bid */}
         
     <section className="container m-auto">
         <h1 className="text-[48px] font-bold text-center py-5">Featured Bids</h1>
@@ -209,7 +204,9 @@ function HomePageV2() {
             })}
           </div>   
     </section>
-
+    <section>
+      <PopularItems/>
+      </section>
     </div>
   );
 }
