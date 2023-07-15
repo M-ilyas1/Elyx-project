@@ -8,6 +8,10 @@ import {
   img6,
   img7,
   img8,
+  img9,
+  img10,
+  img11,
+  img12,
 } from "../../images/index";
 import HeroBanner1 from "../../Component/HeroBanner1/HeroBanner1";
 import Cardimg from "../../Component/Cardimg/Cardimg";
@@ -90,6 +94,45 @@ const products = [
   },
 ];
 
+const products4 = [
+  {
+    id: 1,
+    price: "$100000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "1990",
+    engine: "7WD",
+    location: "California,USA",
+    image: img9,
+  },
+  {
+    id: 2,
+    price: "$200000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "2990",
+    engine: "7WD",
+    location: "California,USA",
+    image: img10,
+  },
+  {
+    id: 3,
+    price: "$300000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "3990",
+    engine: "7WD",
+    location: "Californsia,USA",
+    image: img11,
+  },
+  {
+    id: 4,
+    price: "$400000",
+    name: "mitsubishi delica star wagon exceed",
+    model: "4990",
+    engine: "7WD",
+    location: "California,USA",
+    image: img12,
+  }
+]
+
 function HomePageV2() {
   return (
     <div className="">
@@ -100,7 +143,7 @@ function HomePageV2() {
       <div>
         <Cardimg />
       </div>
-      <section className="w-full flex justify-center mt-28">
+      <section className="container m-auto w-full flex justify-center mt-28">
         <div>
           <div className="flex flex-wrap justify-between items-center pb-10">
             <h1 className="font-semibold text-5xl font-[poppins] lg:pb-7">
@@ -142,6 +185,26 @@ function HomePageV2() {
           <Reviews />
         </div>
       </section>
+
+            {/* feature bid */}
+        
+    <section className="container m-auto">
+        <h1 className="text-[48px] font-bold text-center py-5">Featured Bids</h1>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
+            {products4.map((detail) => {
+              return (
+                <Products
+                  price={detail.price}
+                  name={detail.name}
+                  model={detail.model}
+                  engine={detail.engine}
+                  location={detail.location}
+                  image={detail.image}
+                />
+              );
+            })}
+          </div>   
+    </section>
     </div>
   );
 }
