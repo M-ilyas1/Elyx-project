@@ -13,7 +13,7 @@ import HeroBanner1 from "../../Component/HeroBanner1/HeroBanner1";
 import Cardimg from "../../Component/Cardimg/Cardimg";
 import Cta from "../../Component/Cta/Cta";
 import Reviews from "../../Component/Reviews/Reviews";
-import { Products } from "../../Component";
+import { PopularItems, Products } from "../../Component";
 import Breadcumb from "../../Component/Breadcumb/Breadcumb";
 const products = [
   {
@@ -141,6 +141,9 @@ function HomePageV2() {
         <div className="  flex flex-wrap justify-center gap-7">
           <Reviews />
         </div>
+      </section>
+      <section>
+      <PopularItems/>
       </section>
     </div>
   );
