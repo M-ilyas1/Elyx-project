@@ -1,10 +1,20 @@
 import React from "react";
 import { RiLoginCircleLine } from "react-icons/ri";
+
 function HowItsWorkContent() {
   return (
-    <div className="flex">
+    <div className="flex container">
       {/* first  */}
-      <div className=" first-div  w-[25%] h-[50vh] bg-[red]"></div>
+      <div className=" first-div  w-[25%] h-[50vh] ">
+       
+    <div className='w-[368px] text-[22px] font-mediam leading-[60px]'>
+        <p><a href="" className='hover:text-[blue]'>HOW IT WORKS</a></p>
+        <p><a href="" className='hover:text-[blue]'>Buying a Prodect</a></p>
+        <p><a href="" className='hover:text-[blue]'>Seling a Prodect</a></p>
+        <p><a href="" className='hover:text-[blue]'>Finalizing the Sale</a></p>
+         
+    </div>
+      </div>
       {/* second */}
       <div className=" p-5 tracking-wider w-[1195px]">
         {/* section 1 */}
