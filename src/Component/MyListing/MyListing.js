@@ -73,20 +73,6 @@ function MyListing() {
     ]
   return (
     <>
-    {/* <div className="main w-[1072px] h-[108px]">
-        <div className="list1 flex ">
-             <div className="img">
-                 <img src={img1} alt="" className='w-[152px] h-[108px]'/>
-             </div>
-             <div className="content text-[18px] font-semibold flex">
-                 <h3>1990 Mitsubishi Delica Star Wagon Exceed 4WD</h3>
-                 <p className='justify-end'>2./3232/3</p>
-             </div>
-             </div>
-    </div> */}
-
-
-
     <div className="main w-[1072px] h-[108px]">
       {list.map((i)=>(
         <div className="list1 flex justify-between items-center border mb-2" key={i.id}>
