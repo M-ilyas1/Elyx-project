@@ -5,6 +5,7 @@ import HowItsWorkContent from "../../Component/HowItsWorkContent/HowitsWorkConte
 import { PopularItems } from "../../Component";
 import Footer from "../../Component/Footer/Footer";
 
+
 export default function HowitWorks() {
   return (
     <div>
