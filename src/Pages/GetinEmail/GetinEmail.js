@@ -3,6 +3,7 @@ import SideBar from '../../Component/SideBar/SideBar'
 import MyListing from '../../Component/MyListing/MyListing'
 // import MyBids from '../../Component/MyBids/MyBids'
 import Footer from '../../Component/Footer/Footer'
+import Loginscreen from '../Loginscreen/Loginscreen'
 
 
 export default function GetinEmail() {
@@ -20,6 +21,12 @@ export default function GetinEmail() {
       <div>
         <Footer bgColor="bg-[#FFFFFF]" textColor="text-[#353535]" />
       </div>
+
+      <section>
+      <div>
+        <Loginscreen/>
+      </div>
+      </section>
       </section>
 
    {/* my Bids */}

@@ -7,6 +7,7 @@ import Footer from "../../Component/Footer/Footer";
 
 
 
+
 function About() {
   return (
    <div>
@@ -24,6 +25,10 @@ function About() {
         <Footer bgColor="bg-[#FFFFFF]" textColor="text-[#353535]" />
       </div>
       </section>
+      
+     
+
+
      
    </div>
   );
