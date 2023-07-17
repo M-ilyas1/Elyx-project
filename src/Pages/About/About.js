@@ -3,6 +3,7 @@ import Breadcumb from "../../Component/Breadcumb/Breadcumb";
 import AboutBanner from '../../Component/AboutBanner/AboutBanner';
 import AboutContent from "../../Component/AboutContent/AboutContent";
 import Reviews from '../../Component/Reviews/Reviews'
+import Footer from "../../Component/Footer/Footer";
 
 
 
@@ -16,6 +17,12 @@ function About() {
         <div className="  flex flex-wrap justify-center gap-7">
           <Reviews />
         </div>
+      </section>
+
+      <section>
+      <div>
+        <Footer bgColor="bg-[#FFFFFF]" textColor="text-[#353535]" />
+      </div>
       </section>
      
    </div>

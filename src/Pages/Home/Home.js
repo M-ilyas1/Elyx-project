@@ -8,7 +8,6 @@ import {
   car6,
   car7,
   car8,
-
 } from "../../images/index";
 import { FilterSection } from "../../Component";
 import Cardimg from "../../Component/Cardimg/Cardimg";
@@ -16,7 +15,7 @@ import AuctionCard from "../../Component/AuctionCard/AuctionCard";
 import Carousel from "../../Component/Carousel/Carousel";
 import Cta from "../../Component/Cta/Cta";
 import PopularItems from "../../Component/PopularItems/PopularItems";
-import Example from "../../Component/footer/footer";
+import Footer from "../../Component/Footer/Footer";
 import HeroSection from "../../Component/HeroSection/HeroSection";
 const AuctionData8 = [
   {
@@ -120,7 +119,6 @@ const AuctionData4 = [
 ];
 
 export default function Home() {
- 
   return (
     <div className="container m-auto">
       <section>
@@ -136,30 +134,29 @@ export default function Home() {
       </section>
       <section className="w-full flex justify-center mt-28">
         <div className="px-[110px]">
-        
-        <div className="flex flex-wrap justify-between">
-        <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
-            Lattest Auctions
-          </h1>
-          <div className="tab flex gap-10">
-           <button>
-              <h2 className="transition-all duration-200 hover:border-b-2 hover:border-[#0C50CA] pb-4 hover:text-[#0C50CA] font-medium">
-                ACTIVE
-              </h2>
-            </button>
-            <button>
-              <h2 className="transition-all duration-200 hover:border-b-2 hover:border-[#0C50CA] pb-4 hover:text-[#0C50CA] font-medium">
-                COMMING SOON
-              </h2>
-            </button>
-            <button>
-              <h2 className="transition-all duration-200 hover:border-b-2 hover:border-[#0C50CA] pb-4 hover:text-[#0C50CA] font-medium">
-                COMPLETED
-              </h2>
-            </button>
+          <div className="flex flex-wrap justify-between">
+            <h1 className="pb-5 font-semibold text-4xl font-[poppins]">
+              Lattest Auctions
+            </h1>
+            <div className="tab flex gap-10">
+              <button>
+                <h2 className="transition-all duration-200 hover:border-b-2 hover:border-[#0C50CA] pb-4 hover:text-[#0C50CA] font-medium">
+                  ACTIVE
+                </h2>
+              </button>
+              <button>
+                <h2 className="transition-all duration-200 hover:border-b-2 hover:border-[#0C50CA] pb-4 hover:text-[#0C50CA] font-medium">
+                  COMMING SOON
+                </h2>
+              </button>
+              <button>
+                <h2 className="transition-all duration-200 hover:border-b-2 hover:border-[#0C50CA] pb-4 hover:text-[#0C50CA] font-medium">
+                  COMPLETED
+                </h2>
+              </button>
+            </div>
           </div>
-          </div>
-         
+
           <hr className=" pb-7" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-9">
             {AuctionData8.map((item) => {
@@ -208,11 +205,13 @@ export default function Home() {
       <section>
         <PopularItems />
       </section>
+    
       <section>
-        <div className="">
-          <Example />
-        </div>
+      <div>
+        <Footer bgColor="bg-[#353535]" textColor="text-[#FFFFFF]" />
+      </div>
       </section>
+  
     </div>
   );
 }
