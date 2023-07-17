@@ -5,8 +5,8 @@ import PlanRC from './PlanRC';
 function PlanMain() {
   return (
     <div>
-      <div className=' flex bg-white gap-10 mt-10 ml-10 justify-center'>
-      <Plan/>
+      <div className=' flex bg-gray-100 gap- justify-center'>
+        <Plan/>
         <PlanRC/>
       </div>
       
