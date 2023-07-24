@@ -54,8 +54,9 @@ const [currentTime]=useState(new Date().toLocaleDateString())
         
     ]
   return (
+
     <>
-    <div className="main w-[1072px] h-[108px]">
+    <div id='bid' className="main w-[1072px] h-[108px]">
         {bids.map((p)=>(
             <div className="bid1 flex justify-between items-center border mb-2 font-bold" key={p.id}>
                 <div className="forf flex items-center">

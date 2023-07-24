@@ -75,6 +75,7 @@ function MyListing() {
     <>
     <div className="main w-[1072px] h-[108px]">
       {list.map((i)=>(
+        
         <div className="list1 flex justify-between items-center border mb-2" key={i.id}>
         <div className="content text-[18px] font-bold flex items-center">
             <div className='w-[152px] h-[108px]'><img src={i.image} alt="images for list" /></div>
