@@ -9,7 +9,7 @@ import HomePageV2 from "./Pages/HomePageV2/HomePageV2.js";
 import ActionListing from "./Pages/ActionListing/ActionListing.js";
 import ActionDetails from "./Pages/ActionDetails/ActionDetails.js";
 
-function App() {  
+function App() {
   return (
     <>
     <NavBar/>
