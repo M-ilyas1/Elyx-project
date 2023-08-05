@@ -27,17 +27,6 @@ function Breadcumb() {
             <ul className='absolute left-0 w-full mt-2 bg-white shadow-md rounded-md'>
               <li>
                 <Link
-                  to='/'
-                  className={`block px-4 py-2 text-gray-800 hover:bg-gray-200 ${
-                    selectedItem === 'Homepage-v1' ? 'bg-gray-200' : ''
-                  }`}
-                  onClick={() => handleItemClick('Homepage-v1')}
-                >
-                  Homepage-v1
-                </Link>
-              </li>
-              <li>
-                <Link
                   to='/HomePageV2'
                   className={`block px-4 py-2 text-gray-800 hover:bg-gray-200 ${
                     selectedItem === 'Homepage-v2' ? 'bg-gray-200' : ''
