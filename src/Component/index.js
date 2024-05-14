@@ -3,9 +3,10 @@ export { default as Button } from "./Button/Button";
 export { default as Carousel } from "./Carousel/Carousel";
 export { default as Cta } from "./Cta/Cta";
 export { default as Products } from "./Products/Products";
-export { default as FilterSection } from './FilterSection/FilterSection';
-export { default as Example } from './Footer/Footer';
+export { default as FilterSection} from './FilterSection/FilterSection';
+export { default as Footer } from './Footer/Footer';
 export { default as Header } from './Header/Header';
+
 export { default as HeroBanner1 } from './HeroBanner1/HeroBanner1';
 export { default as HeroBanner2 } from './HeroBanner2/HeroBanner2';
 export { default as HeroSection } from './HeroSection/HeroSection';

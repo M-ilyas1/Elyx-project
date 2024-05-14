@@ -19,7 +19,7 @@ import Cta from "../../Component/Cta/Cta";
 import Reviews from "../../Component/Reviews/Reviews";
 import { PopularItems, Products } from "../../Component";
 import Breadcumb from "../../Component/Breadcumb/Breadcumb";
-import Footer from "../../Component/Footer/Footer";
+// import Footer from "../../Component/Footer/Footer";
 const products = [
   {
     id: 1,
@@ -211,7 +211,7 @@ function HomePageV2() {
 
       <section>
       <div>
-        <Footer bgColor="bg-[#FFFFFF]" textColor="text-[#353535]" />
+        {/* <Footer bgColor="bg-[#FFFFFF]" textColor="text-[#353535]" /> */}
       </div>
       </section>
     </div>
